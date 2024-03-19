@@ -1,0 +1,176 @@
+/* 
+  *************************
+  * 01. root variables
+  *************************
+*/
+
+:root {
+    --primary: #FF6600;
+    --secondary: #BDBDBD;
+    --background: #EFEFEF;
+    --black: #292929;
+ }
+
+ /* 
+  *************************
+  * 03. Typography
+  *************************
+*/
+a{
+    text-decoration: none;
+}
+
+p, 
+ul {
+    padding: 0;
+    margin: 0;
+ }
+
+ /* 
+  *************************
+  * 02. Body
+  *************************
+*/
+
+body {
+  font-family: 'GeneralSans-Medium'
+ }
+
+  /* 
+  *************************
+  *  Announcement
+  *************************
+*/
+.announcement{
+    background: var(--background);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.announcement-text{
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+ /* 
+  *************************
+  *  Navigation
+  *************************
+*/
+.nav-section{
+    background: var(--background);
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.menu-list ul li{
+    margin-right: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list ul li:last-child{
+    margin-right: 0;
+    border-right: none;
+}
+
+.nav-link{
+    color: var(--black);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 10px 0;
+}
+
+.nav-btn{
+    background: var(--primary);
+    padding: 43px;
+    border: none;
+    color: #FFF;
+}
+
+.vertical-line{
+    width: 1px;
+    height: 110px;
+    background: var(--secondary);
+}
+
+ /* 
+  *************************
+  *  Dropdown
+  *************************
+*/
+.dropdown-menu{
+    max-width: 180px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
+ .dropdown-item:hover{
+    background: var(--background);
+ }
+
+ /* 
+  *************************
+  *  Dropdown animaiton
+  *************************
+*/
+ @media (min-width: 768px) {
+    .animate {
+      animation-duration: 0.4s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+  
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  
+  @-webkit-keyframes slideIn {
+    0% {
+      -webkit-transform: transform;
+      -webkit-opacity: 0;
+    }
+  
+    100% {
+      -webkit-transform: translateY(0);
+      -webkit-opacity: 1;
+    }
+  
+    0% {
+      -webkit-transform: translateY(1rem);
+      -webkit-opacity: 0;
+    }
+  }
+  .slideIn {
+    -webkit-animation-name: slideIn;
+    animation-name: slideIn;
+  }
