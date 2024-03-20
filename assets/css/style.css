@@ -1,0 +1,41 @@
+.background-image {
+  background-image: url("/assets/images/contact/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 760px;
+}
+.team-bg {
+  background-image: url("/assets/images/contact/team-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  height: 451px;
+}
+.left-height {
+  height: 100vh;
+}
+.custom-padding {
+  padding: 88px 0;
+}
+.custom-text-color {
+  color: #ff6600;
+}
+.contact-btn-bg {
+  background-color: #ff6600;
+  width: 512px;
+}
+
+.custom-input {
+  padding: 10px 14px;
+  display: inline-block;
+  width: 100%;
+}
+.column-gap {
+  margin-right: 88px;
+}
+.email-box {
+  width: 512px;
+}
+.box {
+  height: 127px;
+}
