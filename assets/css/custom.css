@@ -210,6 +210,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 150px 0;
+  position: relative;
 }
 
 .hero-header{
@@ -254,6 +255,34 @@ body {
   border: none;
 }
 
+.slider-bar-content{
+  background: var(--black);
+  width: 511px;
+  height: 60px;
+  color: var(--white);
+  padding: 0 30px;
+  align-items: center;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.slider-bar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.slider-bar::before{
+  content: "";
+  height: 15px;
+  width: 70%;
+  background: var(--primary);
+  position: absolute;
+  top: -3px;
+  left: 0;
+  border-radius: 10px 0px 0px 0px;
+  z-index: -1;
+}
    /* 
   *************************
   *  Call to action
