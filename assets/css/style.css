@@ -1,3 +1,57 @@
+/* 
+  *************************
+  * 01. root variables
+  *************************
+*/
+
+:root {
+  --primary: #ff6600;
+  --secondary: #bdbdbd;
+  --background: #efefef;
+  --black: #292929;
+  --black-secondary: #525252;
+  --white: #fff;
+}
+
+/* 
+  *************************
+  * 03. Typography
+  *************************
+*/
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  padding: 0;
+  margin: 0;
+}
+/* 
+  *************************
+  * 02. Body
+  *************************
+*/
+
+body {
+  font-family: "GeneralSans-Medium";
+}
+.container {
+  max-width: 1440px;
+}
+.contact-title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52.8px;
+}
 .background-image {
   background-image: url("/assets/images/contact/bg.png");
   background-size: cover;
@@ -18,11 +72,12 @@
   padding: 88px 0;
 }
 .custom-text-color {
-  color: #ff6600;
+  color: var(--primary);
 }
 .contact-btn-bg {
-  background-color: #ff6600;
-  width: 512px;
+  background-color: var(--primary);
+  padding: 17px 14px;
+  color: #fff;
 }
 
 .custom-input {
@@ -33,9 +88,34 @@
 .column-gap {
   margin-right: 88px;
 }
-.email-box {
-  width: 512px;
-}
+
 .box {
   height: 127px;
+}
+
+.team-title {
+  max-width: 624px;
+  color: white;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 66px;
+}
+.contact-img {
+  text-align: center;
+  margin-top: -107px;
+  margin-bottom: 130px;
+}
+
+.contact-map-bg {
+  background-color: var(--black);
+  color: var(--white);
+}
+.map-bar{
+  width: 54.844px;
+  height: 2px;
+  background: #BDBDBD;
+}
+.section-padding{
+  padding:  0 135px;
 }
