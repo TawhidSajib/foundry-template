@@ -119,3 +119,13 @@ body {
 .section-padding{
   padding:  0 135px;
 }
+.team-star-position {
+  position: absolute;
+  
+  left: 306px;
+  top: 996px;
+}
+.team-star2-position {
+  position: absolute;
+  right: 259px;
+}
