@@ -44,8 +44,10 @@ body {
   font-family: "GeneralSans-Medium";
 }
 .container {
-  max-width: 1440px;
+  max-width: 1170px;
 }
+/* contact-page */
+
 .contact-title {
   font-size: 48px;
   font-style: normal;
@@ -111,21 +113,108 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
-.map-bar{
+.map-bar {
   width: 54.844px;
   height: 2px;
-  background: #BDBDBD;
+  background: #bdbdbd;
 }
-.section-padding{
-  padding:  0 135px;
+.section-padding {
+  padding: 0 135px;
 }
 .team-star-position {
   position: absolute;
-  
+
   left: 306px;
   top: 996px;
 }
 .team-star2-position {
   position: absolute;
   right: 259px;
+}
+
+/* blog-page */
+.blog-heading-btn {
+  border-radius: 0.75rem; /* Adjust the value as needed */
+  color: #6941c6;
+  background-color: #f9f5ff;
+  border: none;
+  padding: 0 10px;
+}
+.blog-heading-btn2 {
+  border-radius: 0.75rem; /* Adjust the value as needed */
+  color: #ff6600;
+  background-color: #fff0d3;
+  border: none;
+  padding: 0 10px;
+}
+.blog-heading-btn3 {
+  border-radius: 0.75rem; /* Adjust the value as needed */
+  color: #c11574;
+  background-color: #fdf2fa;
+  border: none;
+  padding: 0 10px;
+}
+.blog-date-color {
+  color: var(--primary);
+}
+.blog-heading {
+  color: var(--Black);
+  text-align: center;
+
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52.8px;
+}
+.blog-para {
+  color: var(--White-Paragraph, #525252);
+  text-align: center;
+  /* General Sans Regular/xl */
+  font-family: "General Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+.article-width {
+  max-width: 770px;
+}
+.blog-article {
+  color: var(--black-secondary);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+.article-quotation {
+  width: 720px;
+height: 216px;
+flex-shrink: 0;
+  margin-top: 60px;
+  text-align: start;
+  color: var(--black);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 36px */
+}
+
+.quote-name{
+  color: var(--White-Paragraph, #525252);
+  
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 170%; /* 27.2px */
+}
+.article-title{
+  color: var(--black);
+
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%; /* 36px */
+}
+.conclusion-bg{
+  background-color: #FFF8EC;
 }
