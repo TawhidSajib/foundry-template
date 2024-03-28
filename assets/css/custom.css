@@ -78,6 +78,10 @@ figure {
   color: #FFF;
 }
 
+.gray-text{
+  color: #DCDCDC;
+}
+
 /* .header-primary-title{
   font-size: 48px;
   line-height: 52px;
@@ -496,7 +500,7 @@ body {
 .home1-service-card-number::before{
   content: url('../images/home/triangle-shape.svg');
   position: absolute;
-  top: -8px;
+  top: -7px;
   right: -14px;
 }
 
@@ -517,22 +521,32 @@ body {
   right: 16px;
   display: flex;
   align-items: center;
-  padding: 20px 10px;
-  /* overflow-x: hidden;
-  overflow-y: visible; */
+  padding: 20px 30px;
+  overflow: hidden;
   transition: 0.35s ease all;
   max-width: 70px;
 }
 
 .home1-project-box:hover .home1-project-box-expand::before{
-  content: "dfsf";
+  content: "";
   position: absolute;
-  top: -50px;
-  left: 0;
-  width: 100px;
-  height: 50px;
+  top: -34px;
+  left: 0px;
+  width: 99px;
+  height: 34px;
   background: #FF7F0A;
   /* overflow: visible; */
+}
+
+.home1-project-box:hover .box-expand-triangle::after{
+  content: url('../images/home/triangle-shape.svg');
+  position: absolute;
+  top: -35px;
+  left: 98px;
+  width: 86px;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0;
 }
 
 /* .home1-project-box-item{
@@ -575,13 +589,49 @@ body {
 .home1-project-box:hover .home1-project-box-expand{
   max-width: 100%;
   background-image: linear-gradient(to right, #FF7F0A 30%, rgba(0,0,0,0) 30%); 
+  overflow: visible;
 }
+
+.home1-project-box:hover .box-expand-triangle{
+  max-width: 100%;
+  overflow: visible;
+}
+
 
 .home1-project-box:hover .home1-project-box-expand-text{
   opacity: 1;
   transform: translateX(0);
   transition: opacity 0.50s 0.1s ease-in, transform 0.15s 0.1s cubic-bezier(.175, .885, .32, 1.275);
 }
+
+   /* 
+  *************************
+  *  Home1 testimonial
+  *************************
+*/
+.home1-testimonial{
+  padding: 130px 0;
+}
+
+.home1-testimonial-shape{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home1-testimonial-content{
+  background: var(--black);  
+  padding: 70px;
+  min-height: 447px;
+}
+
+.home1-testimonial-article{
+  padding-top: 40px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 25px;
+}
+
    /* 
   *************************
   *  Call to action
