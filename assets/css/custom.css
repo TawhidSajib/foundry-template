@@ -51,6 +51,34 @@ figure {
   line-height: 26px;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.header-title{
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+}
+
+/* 
+  *************************
+  * Custom color
+  *************************
+*/
+.primary-text{
+  color: #FF6600;
+}
+
+.black-text{
+  color: #292929;
+}
+
+.white-text{
+  color: #FFF;
+}
+
+
  /* 
   *************************
   * 02. Body
@@ -283,6 +311,110 @@ body {
   border-radius: 10px 0px 0px 0px;
   z-index: -1;
 }
+
+ /* 
+  *************************
+  *  Home1 about
+  *************************
+*/
+.home1-about{
+  padding: 130px 0;
+}
+
+.home1-about-header{
+  background: var(--black);
+  padding: 38px 20px;
+  position: relative;
+  height: 150px;
+}
+
+.vertical-icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.home1-about-header-text{
+  text-transform: uppercase;
+  color: var(--primary)
+}
+
+.home1-about-description{
+  background: #3D3D3D;
+  height: 300px;
+  position: relative;
+}
+
+.home1-about-description-text{
+  padding: 40px 20px;
+}
+
+.home1-about-description-bg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url('../images/home/description-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 92px;
+}
+
+.home1-about-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 14px;
+  border: none;
+  cursor: pointer;
+  width: 205px;
+}
+
+.home1-about-card{
+  background: var(--black);
+  position: relative;
+  padding: 30px;
+  height: 213px;
+}
+
+.home1-about-card-style-left{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home1-about-card-style-right{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home1-about-card-coundown-text{
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: var(--primary);
+  padding-bottom: 5px;
+}
+
+.home1-about-card-text{
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--white);
+  font-family: 'GeneralSans-Regular';
+}
+
+.home1-about-card-oval{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
    /* 
   *************************
   *  Call to action
