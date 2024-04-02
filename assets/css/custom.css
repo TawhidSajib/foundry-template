@@ -61,8 +61,18 @@ figure {
   line-height: 52px;
 }
 
+.header-secondary-title{
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 66px;
+}
+
 .mb-60{
   margin-bottom: 60px;
+}
+
+.mb-40{
+  margin-bottom: 40px;
 }
 
 /* 
@@ -111,6 +121,10 @@ figure {
 
 .btn-bg2{
   background: #0A0D46;
+}
+
+.bg-transparent{
+  background: transparent;
 }
 
  /* 
@@ -261,6 +275,12 @@ body {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
   }
+    /* 
+  *************************
+  *  Start Home 1
+  *************************
+*/
+
 
      /* 
   *************************
@@ -871,7 +891,241 @@ body {
   margin-top: 53px;
 }
 
-   /* 
+
+/* 
+  *************************
+  *  End Home 1
+  *************************
+*/
+
+/* 
+  *************************
+  *  Start Home 2
+  *************************
+*/
+
+/* 
+  *************************
+  *  Home2 hero section
+  *************************
+*/
+.home2-hero-section{
+  background-image: url(../images/home2/home2-hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home2-nav-section{
+  background: transparent;
+  border-bottom: 1px solid var(--secondary)
+}
+
+/* 
+  *************************
+  *  Home2 about
+  *************************
+*/
+
+.home2-about{
+  padding-top: 100px;
+  position: relative;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.home2-about-style{
+  position: absolute;
+  top: 100px;
+  right: 0;
+  z-index: -1;
+}
+
+.home2-about-header{
+  max-width: 470px;
+  padding-bottom: 100px;
+}
+
+.home2-about-content{
+  max-width: 204px;
+}
+
+.home2-about-content-subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: 'GeneralSans-Regular'
+}
+
+.home2-about-content h4{
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+
+/* 
+  *************************
+  *  Home2 service
+  *************************
+*/
+.home2-service{
+  background-image: url('../images/home2/home2-section-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  margin-top: 130px;
+}
+
+.home2-service-left{
+  max-width: 500px;
+}
+
+.home2-service-left img{
+  padding-top: 70px;
+}
+
+.home2-service-content{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 65px;
+}
+
+.home2-service-content:last-child{
+  padding-bottom: 0;
+}
+
+.home2-service-item{
+  position: relative;
+  display: inline-block;
+}
+
+.home2-service-item-text{
+  color: var(--white);
+  cursor: pointer;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.home2-service-img{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 1;
+}
+
+.home2-service-item-text:hover + .home2-service-img{
+  display: block;
+  
+}
+
+.home2-service-item-text:hover{
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* 
+  *************************
+  *  Home2 project
+  *************************
+*/
+.home2-project{
+  padding-top: 130px;
+}
+
+.home2-project-img{
+  text-align: center;
+  margin-top: -55px;
+  position: relative;
+}
+
+.home2-project-img-description{
+  background: var(--white);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 28px 30px;
+    width: 438px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+/* 
+  *************************
+  *  Home2 team
+  *************************
+*/
+.home2-team{
+  background-image: url('../images/home2/home2-team-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  margin-top: 130px;
+  height: 451px;
+}
+
+.home2-team-membar{
+  margin-top: -150px;
+  margin-bottom: 130px;
+}
+
+.home2-team-content{
+  position: relative;
+  cursor: pointer;
+  background: var(--black);
+  padding: 15px;
+}
+
+.home2-team-img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home2-team-img img{
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+}
+
+.home2-team-text-overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary);
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.5s;
+  width: 95px;
+  height: 300px;
+}
+/* .home2-team-content:hover .home2-team-img img{
+  transform: scale(1.1);
+}
+
+.home2-team-content:hover .home2-team-text-overlay{
+  transform: translateY(0);
+} */
+
+.home2-team-img img:hover{
+  transform: scale(1.1);
+}
+
+.home2-team-img:hover .home2-team-text-overlay{
+  transform: translateY(0);
+}
+
+/* 
   *************************
   *  Footer
   *************************
