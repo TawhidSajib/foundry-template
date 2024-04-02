@@ -528,6 +528,36 @@ body {
   position: relative;
 }
 
+.home1-project-circle{
+  position: relative;
+  text-align: center;
+}
+
+.project-circle-text{
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 15px;
+  line-height: 24px;
+  color: var(--primary)
+}
+
+.project-circle-img{
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .home1-project-box-expand{
   background-color: var(--primary); 
   background-image: linear-gradient(to right, #FF7F0A 0%, rgba(0,0,0,0) 0%); 
