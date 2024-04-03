@@ -123,6 +123,10 @@ figure {
   background: #0A0D46;
 }
 
+.btn-bg3{
+  background: var(--primary);
+}
+
 .bg-transparent{
   background: transparent;
 }
@@ -706,6 +710,17 @@ body {
   margin-top: -55px;
 }
 
+.home1-team-thumbnail{
+  position: relative;
+}
+
+.home1-team-play-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
    /* 
   *************************
   *  Home1 testimonial
@@ -800,14 +815,18 @@ body {
   background: var(--Blaze-Orange-50, #fff8ec);
 }
 .blog-card-heading {
-  padding: 20px 24px 33px 24px;
+  padding: 20px 24px 20px 24px;
   text-align: left;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 500;
 }
 .card-arrow {
-  padding: 71px 17px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 136px;
 }
 
 .card-arrow {
@@ -820,6 +839,17 @@ body {
   width: 20px;
   height: 1px;
   background: #656565;
+}
+
+.blog-content{
+  min-height: 136px;
+}
+
+.blog-text{
+  font-size: 14px;
+  line-height: 24px;
+  color: #656565;
+  font-family: 'GeneralSans-Regular'
 }
 
 .news-letter-bg {
@@ -1069,7 +1099,6 @@ body {
 
 .home2-team-membar{
   margin-top: -150px;
-  margin-bottom: 130px;
 }
 
 .home2-team-content{
@@ -1123,6 +1152,60 @@ body {
 
 .home2-team-img:hover .home2-team-text-overlay{
   transform: translateY(0);
+}
+
+.home2-team-name{
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--black)
+}
+
+.home2-team-designation{
+  font-size: 14px;
+  line-height: 22px;
+  color: #656565
+}
+
+/* 
+  *************************
+  *  Home2 testimonial
+  *************************
+*/
+.home2-testimonial{
+  padding-top: 130px;
+}
+
+.home2-testimonial-title{
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 600;
+}
+
+.home2-testimonial-description{
+  padding-top: 72px;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: 'GeneralSans-Regular';
+  color: var(--black);
+  max-width: 645px;
+}
+
+.home2-testimonial-info{
+  padding-top: 40px;
+}
+
+.home2-testimonial-info h4{
+  font-size: 16px;
+  line-height: 27px;
+  font-family: 'GeneralSans-Regular';
+  color: var(--black)
+}
+
+.home2-testimonial-info p{
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'GeneralSans-Regular';
+  color: #656565
 }
 
 /* 
