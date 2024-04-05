@@ -1,0 +1,26 @@
+/* Mobile screen */
+@media screen and (max-width: 1228px){
+    /* Home3 benifits */
+    .benifits-img{
+        width: 100%;
+    }
+
+    /* home3 contact */
+    .home3-contact-img{
+        width: 100%; 
+    }
+
+    /* home3 serivce */
+    .home3-hover-img{
+        display: none;
+    }
+
+    .home3-service-title{
+        background: #13860F;
+    }
+}
+@media screen and (max-width: 992px) {
+    .home3-contact-form{
+        width: 100%;
+    }
+}
