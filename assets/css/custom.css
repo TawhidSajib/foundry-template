@@ -68,12 +68,30 @@ figure {
   line-height: 66px;
 }
 
+.header-tertiary-title{
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
 .mb-60{
   margin-bottom: 60px;
 }
 
 .mb-40{
   margin-bottom: 40px;
+}
+
+.mb-16{
+  margin-bottom: 16px;
+}
+
+.mb-100{
+  margin-bottom: 100px;
+}
+
+.radius-8{
+  border-radius: 8px;
 }
 
 /* 
@@ -90,6 +108,13 @@ figure {
   padding: 14px 20px;
   color: var(--white);
   border: 1px solid var(--primary)
+}
+
+.secondary-btn{
+  background: var(--white);
+  padding: 14px 20px;
+  color: var(--black);
+  border: 1px solid #D0D5DD
 }
 
 .black-text{
@@ -1699,8 +1724,124 @@ body {
   border: 1px solid var(--green);
   margin-top: 40px;
 }
+/* 
+  *************************
+  *  End Home 3
+  *************************
+*/
 
+/* 
+  *************************
+  *  Start Service
+  *************************
+*/
+.service-hero-bg{
+  background-image: url('../images/service/service-hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
 
+.primary-hero-img{
+  position: relative;
+}
+
+.primary-hero-content{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.breadcrumb-content{
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.breadcrumb-content .breadcrumb-item{
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.breadcrumb-content a{
+  color: var(--black);
+}
+
+.primary-hero-title{
+  margin-top: 40px;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+/* 
+  *************************
+  * Build together
+  *************************
+*/
+.build-together{
+  background-image: url(../images/home2/home2-team-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 130px;
+  height: 460px;
+}
+
+.build-right-img{
+  margin-top: -20px;
+}
+
+.build-together-content{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-35%, -50%);
+}
+
+.build-together-content-mobile{
+  display: none;
+}
+
+/* 
+  *************************
+  *  Pricing
+  *************************
+*/
+
+.pricing-subtitle{
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'GeneralSans-Regular';
+  color: #475467;
+}
+
+.pricing-card{
+  min-height: 581px;
+  background: var(--white);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08), 0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  border-radius: 16px;
+  border: 1px solid #EAECF0;
+  padding: 32px;
+}
+
+.pricing-card-plan{
+  padding-bottom: 32px;
+}
+
+.pricing-card-plan h5{
+  padding-top: 16px;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.pricing-card-text{
+  font-size: 16px;
+  line-height: 27px;
+  font-family: 'GeneralSans-Regular';
+  color: #525252;
+}
 /* 
   *************************
   *  Footer
