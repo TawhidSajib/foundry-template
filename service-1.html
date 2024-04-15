@@ -39,11 +39,83 @@
         <!-- Responsive CSS -->
         <link rel="stylesheet" href="./assets/css/responsive.css">
 
+        <!-- Mobile Menu CSS -->
+        <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+
     </head>
     <body>
         <main>
+            <!-- Mobile menu -->
+            <!-- Mobile Menu -->
+            <nav id="mobile-nav" class="d-lg-none">
+                <ul class="right-nav">
+                    <li>
+                      <img class="moblie-logo" src="./assets/images/logo/logo-black.svg" alt="Logo">
+                    </li>
+                  </ul>
+                <label for="toggleMainNav" class="hamburger-menu"></label>
+                <input type="checkbox" id="toggleMainNav" class="check-toggle">
+                <label for="toggleMainNav" class="menu-overlay"></label>
+                <div class="main-nav-holder">
+                  <ul class="main-nav">
+                    <li class="close-nav">
+                      <label for="toggleMainNav"></label>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact Us</a>
+                      </li>
+                    <li>
+                      <a href="./contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <!-- Mobile menu -->
+
             <!-- Start: Navigation -->
-            <section class="nav-section bg-transparent">
+            <section class="nav-section bg-transparent d-lg-flex d-none">
                 <div class="container"> 
                     <nav class="nav-menu">
                         <figure>
@@ -109,7 +181,7 @@
                             <!-- breadcrumbs -->
                             <nav>
                                 <ul class="breadcrumb-content">
-                                  <li class="breadcrumb-item me-3"><a href="#"><img src="./assets/images/common icon/home-icon.svg" alt="home icon"></a></li>
+                                  <li class="breadcrumb-item me-3"><a href="#"><img src="./assets/images/common-icon/home-icon.svg" alt="home icon"></a></li>
                                   <li><i class="fa-solid fa-chevron-right me-3"></i></li>
                                   <li class="breadcrumb-item"><a href="#">Services</a></li>
                                 </ul>
@@ -121,6 +193,97 @@
                 </div>
             </section>
             <!-- End: Primary hero section -->
+
+            <!-- Start: Home1 service -->
+            <section class="home1-service">
+                <div class="container">
+                    <header class="mb-100">
+                        <div>
+                            <h2 class="header-title text-center">Together We Build <br> <span class="primary-text">Your Dream</span></h2>
+                        </div>
+                    </header>
+                    <div class="row">
+                        <div class="col-lg-4 mb-5">
+                            <div class="home1-service-card service-bg1">
+                                <h3>Building <br> Constructions</h3>
+                                <img src="./assets/images/home/home1-service-img1.svg" alt="service image">
+                                <!-- right style image -->
+                                <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
+                                <!-- number -->
+                                <div class="home1-service-card-number">
+                                    <p>01</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-5">
+                            <div class="home1-service-card service-bg2">
+                                <h3>Renewable <br> Energy</h3>
+                                <img src="./assets/images/home/home1-service-img2.svg" alt="service image">
+                                 <!-- right style image -->
+                                 <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
+                                 <!-- number -->
+                                <div class="home1-service-card-number">
+                                    <p>02</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-5">
+                            <div class="home1-service-card service-bg1">
+                                <h3>Road <br> Construction</h3>
+                                <img src="./assets/images/home/home1-service-img3.svg" alt="service image">
+                                 <!-- right style image -->
+                                 <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
+                                 <!-- number -->
+                                <div class="home1-service-card-number">
+                                    <p>03</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-lg-0 mb-5">
+                            <div class="home1-service-card service-bg1">
+                                <h3>Building <br> Constructions</h3>
+                                <img src="./assets/images/home/home1-service-img1.svg" alt="service image">
+                                <!-- right style image -->
+                                <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
+                                <!-- number -->
+                                <div class="home1-service-card-number">
+                                    <p>01</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mb-lg-0 mb-5">
+                            <div class="home1-service-card service-bg2">
+                                <h3>Renewable <br> Energy</h3>
+                                <img src="./assets/images/home/home1-service-img2.svg" alt="service image">
+                                 <!-- right style image -->
+                                 <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
+                                 <!-- number -->
+                                <div class="home1-service-card-number">
+                                    <p>02</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="home1-service-card service-bg1">
+                                <h3>Road <br> Construction</h3>
+                                <img src="./assets/images/home/home1-service-img3.svg" alt="service image">
+                                 <!-- right style image -->
+                                 <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
+                                 <!-- number -->
+                                <div class="home1-service-card-number">
+                                    <p>03</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- End: Home1 service -->
 
             <!-- Start: Build together  -->
             <section class="build-together">
@@ -161,7 +324,7 @@
 
                    <div class="row">
                     <div class="col-lg-4">
-                        <div class="pricing-card">
+                        <div class="pricing-card most-popular">
                             <div class="text-center pricing-card-plan">
                                 <h2 class="header-title black-text">$10/mth</h2>
                                 <h5>Basic plan</h5>
@@ -170,27 +333,27 @@
 
                             <div>
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Access to all basic features</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Basic reporting and analytics</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Up to 10 individual users</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">20GB individual data each user</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Basic chat and email support</p>
                                 </div>
                             </div>
@@ -219,27 +382,27 @@
 
                             <div>
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Access to all basic features</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Basic reporting and analytics</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Up to 10 individual users</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">20GB individual data each user</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Basic chat and email support</p>
                                 </div>
                             </div>
@@ -268,27 +431,27 @@
 
                             <div>
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Access to all basic features</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Basic reporting and analytics</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Up to 10 individual users</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">20GB individual data each user</p>
                                 </div>
 
                                 <div class="d-flex mb-16">
-                                    <img src="./assets/images/common icon/check-icon.svg" alt="check icon">
+                                    <img src="./assets/images/common-icon/check-icon.svg" alt="check icon">
                                     <p class="pricing-card-text ms-3">Basic chat and email support</p>
                                 </div>
                             </div>
@@ -309,7 +472,7 @@
                    </div>
                 </div>
             </section>
-            <!-- EndL Pricing -->
+            <!-- End: Pricing -->
 
             <!-- Start: Footer -->
             <section class="footer">

@@ -59,4 +59,9 @@
         align-items: center;
         flex-direction: column;
     }
+
+    /* Home1 service */
+    .home1-service-card-number{
+        padding: 10px;
+    }
 }
