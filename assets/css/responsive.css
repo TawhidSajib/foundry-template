@@ -33,8 +33,16 @@
 .primary-hero-content {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.home2-project-img-description{
+    display: none;
+}
+
+.title-img-header{
+    padding-bottom: 45px;
 }
 }
 @media screen and (max-width: 992px) {
@@ -63,5 +71,10 @@
     /* Home1 service */
     .home1-service-card-number{
         padding: 10px;
+    }
+    
+    /* Service introduction */
+    .service-intro-text{
+        padding-left: 0;
     }
 }

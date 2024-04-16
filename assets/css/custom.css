@@ -850,6 +850,7 @@ body {
 .blog-card {
   border-bottom: 1px solid var(--Blaze-Orange-300, #ffc26d);
   border-left: 1px solid var(--Blaze-Orange-300, #ffc26d);
+  border-right: 1px solid var(--Blaze-Orange-300, #ffc26d);
   background: var(--Blaze-Orange-50, #fff8ec);
 }
 .blog-card-heading {
@@ -1749,7 +1750,7 @@ body {
 .primary-hero-content{
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 15%;
   transform: translate(-50%, -50%);
 }
 
@@ -1976,6 +1977,81 @@ body {
   background: #FFF0D3;
   border-radius: 16px;
 }
+
+/* 
+  *************************
+  *  Title image
+  *************************
+*/
+.title-img-section{
+  padding-top: 130px;
+}
+
+.title-img-header{
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.title-img-style{
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.title-img-style h4{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title-img{
+  position: relative;
+  margin-top: -40px;
+}
+
+/* 
+  *************************
+  *  Service introduction
+  *************************
+*/
+.service-intro-text{
+  font-size: 24px;
+  line-height: 48px;
+  color: var(--black);
+  padding-left: 40px;
+}
+
+/* 
+  *************************
+  *  Service feature
+  *************************
+*/
+.service-intro{
+  padding-top: 130px;
+}
+
+.service-feature{
+  background: var(--black);
+  padding: 120px 0;
+  margin-top: 130px;
+}
+
+.service-feature-title{
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+  padding-bottom: 5px;
+}
+
+.service-feature-subtitle{
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--white);
+  font-family: 'GeneralSans-Regular';
+}
+
 /* 
   *************************
   *  Footer
