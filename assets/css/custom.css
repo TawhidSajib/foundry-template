@@ -2054,6 +2054,54 @@ body {
 
 /* 
   *************************
+  *  Project about
+  *************************
+*/
+.project-about{
+  padding-top: 130px;
+}
+
+.project-about-title{
+  font-size: 30px;
+  line-height: 47px;
+  color: var(--primary);
+  font-family: 'GeneralSans-Semibold';
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+/* 
+  *************************
+  * Project description
+  *************************
+*/
+.project-description{
+  padding-top: 130px;
+}
+
+.project-description-title{
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--black);
+}
+.project-description-subtitle{
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--black-secondary);
+  font-family: 'GeneralSans-Regular';
+}
+
+/* 
+  *************************
+  *  Project gallery
+  *************************
+*/
+.project-gallery{
+  padding-top: 130px;
+}
+
+/* 
+  *************************
   *  Footer
   *************************
 */

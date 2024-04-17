@@ -1,5 +1,12 @@
 /* Mobile screen */
 @media screen and (max-width: 1228px){
+    /* Primary hero section */
+    .primary-hero-content {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
     /* Home3 benifits */
     .benifits-img{
         width: 100%;
@@ -18,25 +25,10 @@
     .home3-service-title{
         background: #13860F;
     }
-
-     /* Primary hero section */
-     .primary-hero-content {
-        position: absolute;
-        top: 50%;
-        left: 15%;
-        transform: translate(-50%, -50%);
-    }
 }
 
 @media screen and (max-width: 768px){
-/* Primary hero section */
-.primary-hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
+    /* Home2 project */
 .home2-project-img-description{
     display: none;
 }
@@ -46,6 +38,17 @@
 }
 }
 @media screen and (max-width: 992px) {
+/* Primary hero section */
+.primary-hero-title {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.breadcrumb-content .breadcrumb-item {
+    font-size: 14px;
+    line-height: 27px;
+}
     /* Home3 contact */
     .home3-contact-form{
         width: 100%;
