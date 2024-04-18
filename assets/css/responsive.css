@@ -25,6 +25,11 @@
     .home3-service-title{
         background: #13860F;
     }
+
+    /* Home1 award */
+    .award-bridge-img{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -79,5 +84,12 @@
     /* Service introduction */
     .service-intro-text{
         padding-left: 0;
+    }
+
+    /* Hom2 project */
+    .home2-project-img {
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
     }
 }

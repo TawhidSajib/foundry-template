@@ -36,45 +36,86 @@
         <!-- Custom CSS -->
         <link rel="stylesheet" href="./assets/css/custom.css" >
 
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+
+        <!-- Mobile Menu CSS -->
+        <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+
     </head>
     <body>
         <main>
-            <!-- Start: Announcement -->
-            <section class="announcement">
-                <div class="container">
-                    <div class="d-lg-flex justify-content-between">
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex align-items-center me-4">
-                                <img class="me-2" src="./assets/images/home/phone-icon.svg" alt="">
-                                <p class="announcement-text">+1 (232) 102 345</p>
-                            </div>
-                            <div class="d-flex align-items-center me-4">
-                                <img class="me-2" src="./assets/images/home/mail-icon.svg" alt="">
-                                <p class="announcement-text">email@example.com</p>
-                            </div>
-                            <div class="d-flex align-items-center me-4">
-                                <img class="me-2" src="./assets/images/home/location-icon.svg" alt="">
-                                <p class="announcement-text">120 F 2th Yt, Melbone NY 1259</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-wrap">
-                            <div class="d-flex align-items-center me-4 mb-lg-0 mb-2">
-                                <img class="me-2" src="./assets/images/home/award-icon.svg" alt="">
-                                <p class="announcement-text">Dubai Artchitect Award 2024</p>
-                            </div>
-                            <div class="d-flex align-items-center me-4">
-                                <img class="me-2" src="./assets/images/home/quality-icon.svg" alt="">
-                                <p class="announcement-text">ISO 9001 - 2024</p>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Mobile menu -->
+            <!-- Mobile Menu -->
+            <nav id="mobile-nav" class="d-xl-none">
+                <ul class="right-nav">
+                    <li>
+                      <img class="moblie-logo" src="./assets/images/logo/logo-black.svg" alt="Logo">
+                    </li>
+                  </ul>
+                <label for="toggleMainNav" class="hamburger-menu"></label>
+                <input type="checkbox" id="toggleMainNav" class="check-toggle">
+                <label for="toggleMainNav" class="menu-overlay"></label>
+                <div class="main-nav-holder">
+                  <ul class="main-nav">
+                    <li class="close-nav">
+                      <label for="toggleMainNav"></label>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact Us</a>
+                      </li>
+                    <li>
+                      <a href="./contact.html">Contact Us</a>
+                    </li>
+                  </ul>
                 </div>
-            </section>
-            <!-- End: Announcement -->
+              </nav>
+            <!-- Mobile menu -->
 
             <!-- Start: Navigation -->
-            <section class="nav-section">
+            <section class="nav-section bg-transparent d-xl-flex d-none">
                 <div class="container"> 
                     <nav class="nav-menu">
                         <figure>
@@ -82,7 +123,6 @@
                         </figure>
                         <div class="menu-list d-lg-inline-block d-none">
                             <ul>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
                                         <a class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
@@ -92,7 +132,6 @@
                                     </div>
                                     </div>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
                                         <a class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
@@ -102,7 +141,6 @@
                                     </div>
                                     </div>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
                                         <a class="nav-link">Services <i class="fa-solid fa-angle-down"></i></a>
@@ -112,15 +150,12 @@
                                     </div>
                                     </div>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Projects</a>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Blog</a>
                                 </li>
-                                <li class="vertical-line"></li>
                             </ul>
                         </div>
                         <div>
@@ -131,35 +166,27 @@
             </section>
             <!-- End: Navigation -->
 
-            <!-- Start: Hero section -->
-            <section class="hero-section">
+            <!-- Start: Primary hero section -->
+            <section class="service-hero-bg">
                 <div class="container">
-                    <header class="hero-header">
-                        <div class="hero-title"><p>Empowerment</p> <br> <p>Industries Igniting</p> <br> <p>Potential & Fostering</p><br> <p>Growth</p></div>
-                        <a href="#" class="hero-btn-link">
-                            <button class="hero-btn btn-bg1 black-text title-secondary">Contact us</button>
-                            <div class="newsletter-btn" type="button" id="button-addon2">
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
-                            </div>
-                        </a>
-                    </header>
-
-                    <div class="slider-bar">
-                        <div class="d-flex gap-5 slider-bar-content">
-                            <div class="d-flex gap-4">
-                                <p class="title-secondary">2/5</p>
-                                <p class="title-secondary">BlueBay Gas Plant</p>
-                            </div>
-    
-                            <div class="d-flex">
-                                <img class="me-4 cursor-pointer" src="./assets/images/home/left-arrow.svg" alt="left arrow">
-                                <img class="cursor-pointer" src="./assets/images/home/right-arrow.svg" alt="right arrow">
-                            </div>
+                    <div class="primary-hero-img">
+                        <img class="w-100" src="./assets/images/about/about-hero-img.png" alt="about hero image">
+                        <div class="primary-hero-content">
+                            <!-- breadcrumbs -->
+                            <nav>
+                                <ul class="breadcrumb-content">
+                                  <li class="breadcrumb-item me-3"><a href="#"><img src="./assets/images/common-icon/home-icon.svg" alt="home icon"></a></li>
+                                  <li><i class="fa-solid fa-chevron-right me-3"></i></li>
+                                  <li class="breadcrumb-item"><a href="#">About</a></li>
+                                </ul>
+                              </nav>
+                            <!-- breadcrumbs -->
+                              <h4 class="primary-hero-title">About Foundry9</h4>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End: Hero section -->
+            <!-- End: Primary hero section -->
 
             <!-- Start: Home1 about -->
             <section class="home1-about">
@@ -238,194 +265,184 @@
             </section>
             <!-- End: Home1 about -->
 
-            <!-- Start: Home1 service -->
-                <section class="home1-service">
-                    <div class="container">
-                        <header class="home1-service-header">
-                            <div>
-                                <span class="title-primary primary-text uppercase mb-4 d-lg-inline-block">Our Services</span>
-                                <h2 class="header-title">Together We Build <br> <span class="primary-text">Your Dream</span></h2>
-                            </div>
-
-                            <div class="home-service-link">
-                                <a href="#">Excellence services</a>
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="">
-                            </div>
-                        </header>
-                        <div class="row gx-0">
-                            <div class="col-lg-4">
-                                <div class="home1-service-card service-bg1">
-                                    <h3>Building <br> Constructions</h3>
-                                    <img src="./assets/images/home/home1-service-img1.svg" alt="service image">
-                                    <!-- right style image -->
-                                    <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
-                                    <!-- number -->
-                                    <div class="home1-service-card-number">
-                                        <p>01</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="home1-service-card service-bg2">
-                                    <h3>Renewable <br> Energy</h3>
-                                    <img src="./assets/images/home/home1-service-img2.svg" alt="service image">
-                                     <!-- right style image -->
-                                     <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
-                                     <!-- number -->
-                                    <div class="home1-service-card-number">
-                                        <p>02</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4">
-                                <div class="home1-service-card service-bg1">
-                                    <h3>Road <br> Construction</h3>
-                                    <img src="./assets/images/home/home1-service-img3.svg" alt="service image">
-                                     <!-- right style image -->
-                                     <img class="home1-service-card-right-style" src="./assets/images/home/scale-img.svg" alt="scale image">
-                                     <!-- number -->
-                                    <div class="home1-service-card-number">
-                                        <p>03</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            <!-- End: Home1 service -->
-
-            <!-- Start: Home1 project -->
-                <section class="home1-project">
-                    <div class="container">
-                        <header class="home1-service-header">
-                            <div>
-                                <span class="title-primary primary-text uppercase mb-4 d-lg-inline-block">Our Projects</span>
-                                <h2 class="header-title">Track Record of Success</h2>
-
-                                <div class="home-service-link mt-3">
-                                    <a href="#">View all projects</a>
-                                    <img src="./assets/images/home/up-arrow-icon.svg" alt="">
-                                </div>
-                            </div>
-
-                            <div class="home1-project-circle">
-                                <img class="project-circle-img" src="./assets/images/home/home1-project-circle.svg" alt="project circle">
-                                <div class="project-circle-text">700+</div>
-                            </div>
-                        </header>
-                        <div class="row gx-4">
-                            <div class="col-lg-6 mb-4">                               
-                                <div class="home1-project-box">
-                                    <img class="w-100 h-100" src="./assets/images/home/home1-project-img1.png" alt="">
-                                    <!-- button expand -->
-                                    <div class="home1-project-box-item">
-                                        <div class="home1-project-box-expand">
-                                            <div class="home1-project-box-expand-text">
-                                                SkyRise Haven, Toronto
-                                            </div>
-                                            <img class="home1-project-box-expand-icon" src="./assets/images/home/up-arrow-white.svg" alt="">
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6 mb-4">
-                                <img class="w-100 h-100" src="./assets/images/home/home1-project-img2.png" alt="">
-                            </div>
-
-                            <div class="col-lg-4 mb-lg-0 mb-4">
-                                <img class="w-100 h-100" src="./assets/images/home/home1-project-img3.png" alt="">
-                            </div>
-
-                            <div class="col-lg-8 mb-lg-0 mb-4">
-                                <img class="w-100 h-100" src="./assets/images/home/home-project-img4.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            <!-- End: Home1 project -->
-
-            <!-- Start: Home1 team -->
-            <section class="home1-team">
+            <!-- Start: About timeline -->
+            <section class="about-timeline">
                 <div class="container">
-                    <header class="home1-team-header">
-                        <div>
-                            <span class="title-primary primary-text uppercase mb-4 d-lg-inline-block">Team Leader</span>
-                            <h2 class="header-title white-text">Words from Our <br> <span class="primary-text">Visionary Leader</span></h2>
-                        </div>
-
-                        <a href="#" class="hero-btn-link">
-                            <button class="hero-btn btn-bg2 white-text title-secondary">View full team</button>
-                            <div class="newsletter-btn" type="button" id="button-addon2">
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
-                            </div>
-                        </a>
-                    </header>
-                    <div class="text-center">
-                        <img src="./assets/images/home/home1-team-1993.svg" alt="since 1993">
+                    <div class="mb-60">
+                        <h2 class="header-title text-center">25 Years of <br> <span class="primary-text">Visionary Legacy.</span></h2>
                     </div>
-                    <div class="row home1-team-content">
-                        <div class="col-lg-8">
-                            <div class="home1-team-thumbnail">
-                                <img class="w-100" src="./assets/images/home/home1-team-thumbnail.png" alt="team thumbnail">
-                                <img class="home1-team-play-icon" src="./assets/images/home/play-icon.svg" alt="play icon">
-                            </div>
-                        </div>
 
-                        <div class="col-lg-4">
-                            <img class="w-100" src="./assets/images/home/home1-team.png" alt="team image">
-                            <div class="mt-4">
-                                <h4 class="home1-team-name">Mr. Ariful Haque</h4>
-                                <p class="home1-team-designation">CEO, Foundry9</p>
-                            </div>
-                        </div>
+                    <div class="text-center d-lg-block d-none">
+                        <img class="w-100" src="./assets/images/home/home1-team-1993.svg" alt="1993">
                     </div>
-                </div>
-            </section>
-            <!-- Start: Home1 team -->
-
-            <!-- Start: Home1 testimonial -->
-            <section class="home1-testimonial">
-                <div class="container">
-                    <div class="row gx-0">
+                    <div class="row about-timeline-left">
                         <div class="col-lg-7">
-                            <div class="d-flex justify-content-between">
-                                <div>
-                                    <span class="home1-about-header-text title-primary mb-4 d-inline-block">Testimonial</span>
-                                    <h2 class="header-title black-text mt-2">Celebrating</h2>
-                                    <h2 class="header-title primary-text mt-2">Success Together</h2>
+                            <div id="workexperience" class="sectionClass">
+                                <div class="timeline">
+                                  <div class="fullWidth eight columns">
+                                    <ul class="cbp_tmtimeline">
+                                      <li>
+                                        <div class="cbp_tmicon cbp_tmicon-phone">
+                                          <p class="d-flex justify-content-center align-items-center white-text">1993</p>
+                                        </div>
+                                        <div class="cbp_tmlabel wow fadeInRight animated">
+                                          <h3>Company Starting</h3>
+                                          <p>Fonudry9 is a renowned construction company in Japan, which is one of the oldest concerns of Fonudry9 group.</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="cbp_tmicon cbp_tmicon-screen">
+                                            <p class="d-flex justify-content-center align-items-center white-text">1995</p>
+                                        </div>
+                                        <div class="cbp_tmlabel wow fadeInRight animated">
+                                            <h3>Inauguration of Foundry9 Group</h3>
+                                            <p>Starting out as a proprietorship firm named Fonudry9 Construction in 1981, it had later changed to Fonudry9 Construction Limited , being incorporated as a private limited company in 1989.</p>
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="cbp_tmicon cbp_tmicon-mail">
+                                            <p class="d-flex justify-content-center align-items-center white-text">2004</p>
+                                        </div>
+                                        <div class="cbp_tmlabel wow fadeInRight animated">
+                                            <h3>Get Best Company Award</h3>
+                                            <p>Afterwards in 2011, this construction giant changed its name to Fonudry9 Engineers Limited. Since its inception, the company has completed diversified projects and successfully fostered growth in the sector of construction and development.</p>                           
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="cbp_tmicon cbp_tmicon-phone">
+                                            <p class="d-flex justify-content-center align-items-center white-text">2009</p>
+                                        </div>
+                                        <div class="cbp_tmlabel wow fadeInRight animated">
+                                            <h3>Institution of Foyndry Properties</h3>
+                                            <p>Afterwards in 2009, this construction giant changed its name to Fonudry9 Engineers Limited. Since its inception, the company has completed diversified projects and successfully fostered growth.</p>                           
+                                        </div>
+                                      </li>
+                                      <li>
+                                        <div class="cbp_tmicon cbp_tmicon-mail">
+                                            <p class="d-flex justify-content-center align-items-center white-text">2024</p>
+                                        </div>
+                                        <div class="cbp_tmlabel wow fadeInRight animated">
+                                            <h3>Global Leading Awards</h3>
+                                            <p>Afterwards in 2024, this construction giant changed its name to Fonudry9 Engineers Limited. Since its inception, the company has completed diversified projects and successfully.</p>                           
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
-
-                               <div>
-                                <img src="./assets/images/home/testimonial-shape.svg" alt="">
-                               </div>
-                            </div>
-                            <div class="home1-testimonial-content">
-                                <div>
-                                    <h4 class="title-secondary white-text">Judith Nielson</h4>
-                                    <p class="title-primary gray-text">Judith, Nielson Family Office</p>
-
-                                    <div class="home1-testimonial-article">
-                                        Fonudy9 A Talent in Construction. With unwavering ethical standards and transparent communication, Fonudy9 stands as an exemplary collaborator in every project. Their deep expertise and respect for teamwork shine through, fostering lasting relationships beyond completion.
-                                        Fonudy9 A Talent in Construction. With unwavering ethical standards and transparent communication, Fonudy9 stands as an exemplary collaborator in every project. Their deep expertise and respect for teamwork shine through, fostering lasting relationships beyond completion.
-                                    </div>
-                                </div>
-                            </div>
+                              </div>
                         </div>
 
                         <div class="col-lg-5">
-                            <img class="w-100" src="./assets/images/home/home1-testimonial-main.png" alt="">
+                            <img class="w-100" src="./assets/images/about/about-timeline-img.png" alt="about timeline img">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End: Home1 testimonial -->
+            <!-- End: About timeline -->
+
+            <!-- Start: Home2 team -->
+            <section>
+                <header class="text-center home2-team">
+                    <h2 class="header-secondary-title white-text">Meet Our Leaders <br> <span class="primary-text">Behind Spark</span></h2>
+                </header>
+                <div class="container">
+                    <div class="home2-team-membar">
+                        <div class="row">
+                            <div class="col-lg-4 mb-lg-0 mb-4">
+                                <div class="home2-team-content">
+                                    <div class="home2-team-img">
+                                        <img src="./assets/images/home2/team1.png" alt="team 1">
+                                        <div class="home2-team-text-overlay">
+                                            <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                            <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                            <div><i class="fa-brands fa-instagram"></i></div>                                           
+                                        </div>
+                                    </div>
+                                </div> 
+                                <div class="text-center mt-4">
+                                    <h4 class="home2-team-name">Mr. Ariful Haque</h4>
+                                    <p class="home2-team-designation">CEO, Foundry9</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 mb-lg-0 mb-4">
+                                <div class="home2-team-content">
+                                    <div class="home2-team-img">
+                                        <img src="./assets/images/home2/team2.png" alt="team 2">
+                                        <div class="home2-team-text-overlay">
+                                            <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                            <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                            <div><i class="fa-brands fa-instagram"></i></div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <h4 class="home2-team-name">Kashfia Jebril</h4>
+                                    <p class="home2-team-designation">Kashfia Jebril</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="home2-team-content">
+                                    <div class="home2-team-img">
+                                        <img src="./assets/images/home2/team3.png" alt="team 3">
+                                        <div class="home2-team-text-overlay">
+                                            <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                            <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                            <div><i class="fa-brands fa-instagram"></i></div>                                           
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <h4 class="home2-team-name">Eng. Branon Mour</h4>
+                                    <p class="home2-team-designation">Head of Operations</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center mt-4">
+                            <a href="#" class="hero-btn-link">
+                                <button class="hero-btn btn-bg3 white-text title-secondary">View full team</button>
+                                <div class="newsletter-btn" type="button" id="button-addon2">
+                                    <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End: Home2 team -->
+
+             <!-- Start: Home2 testimonial -->
+             <section class="home2-testimonial">
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-5">
+                            <img class="w-100 h-100" src="./assets/images/home2/home2-testimonial.png" alt="testimonial image">
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div>
+                                <h2 class="home2-testimonial-title">Client Feedback <br> <span class="primary-text">Real Stories, Real Satisfaction</span></h2>
+                                <p class="home2-testimonial-description">I can't say enough good things about Foundry9 Construction. They made the renovation process stress-free and enjoyable from start to finish. Their team of experts delivered outstanding results, and we're thrilled with our newly renovated space!</p>
+                                <div class="home2-testimonial-info">
+                                    <h4>— Renee Wells</h4>
+                                    <p>Project Manager, Shanta Tales</p>
+                                </div>
+
+                                <div class="mt-5">
+                                    <img class="me-3 cursor-pointer" src="./assets/images/home2/left-arrow.svg" alt="left arrow">
+                                    <img class="cursor-pointer" src="./assets/images/home2/right-arrow.svg" alt="right arrow">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End: Home2 testimonial -->
 
             <!-- Start: Home1 award -->
-            <section class="home1-award">
+            <section class="home1-award mt-130">
                 <img class="award-bridge-img" src="./assets/images/home/award-bridge-img.png" alt="bridge image">
                 <div>
                     <div class="container">
@@ -479,142 +496,39 @@
                             </div>
                         </div>
                     </div>
-                <!-- <img class="award-bridge-img" src="./assets/images/home/award-bridge-img.png" alt="bridge image"> -->
-
                 </div>
-
-               <!-- <div class="d-flex align-items-center">
-                    <div>
-                        <div class="container">
-                            <h2 class="header-title white-text mb-60">Awards & Milestones</h2>
-                            <p class="title-secondary white-text home1-award-subtitle">Fonudy9 A Talent in Construction. With unwavering ethical standards and transparent communication, Fonudy9 stands as an exemplary collaborator in every project. Their deep expertise and respect for teamwork shine through, fostering lasting relationships beyond completion.</p>
-                            <div>
-                                <button class="primary-btn title-secondary">Share your dream! <img src="./assets/images/home/up-arrow-white.svg" alt="up arrow"></button>
-                                <img src="./assets/images/home/award-arrow-shape.svg" alt="arrow shape">
-                            </div>
-                        </div>
-                        <img class="award-bridge-img" src="./assets/images/home/award-bridge-img.png" alt="bridge image">
-                    </div>
-
-
-                        <div>
-                            <div class="d-flex justify-content-between mb-60">
-                                <img src="./assets/images/home/award-1.svg" alt="award 1">
-                                <img src="./assets/images/home/award-2.svg" alt="award 2">
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-60">
-                                <img src="./assets/images/home/award-1.svg" alt="award 1">
-                                <img src="./assets/images/home/award-2.svg" alt="award 2">
-                            </div>
-
-                            <div class="d-flex justify-content-between mb-60">
-                                <img src="./assets/images/home/award-1.svg" alt="award 1">
-                                <img src="./assets/images/home/award-2.svg" alt="award 2">
-                            </div>
-                            
-                            <div class="d-flex justify-content-between mb-60">
-                                <img src="./assets/images/home/award-1.svg" alt="award 1">
-                                <img src="./assets/images/home/award-2.svg" alt="award 2">
-                            </div>
-                        </div>
-        
-               </div> -->
             </section>
             <!-- End: Home1 award -->
 
-            <!-- Start: Home1 latest blog -->
-            <section class="home1-latest-blog">
+            <!-- Start: About team -->
+            <section class="about-team">
                 <div class="container">
-                    <header class="home1-service-header">
-                        <div>
-                            <span class="title-primary primary-text uppercase mb-4 d-lg-inline-block">Our Services</span>
-                            <h2 class="header-title">Our Latest <span class="primary-text">Blog</span></h2>
-                        </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 mb-lg-0 mb-4">
+                            <div class="about-team-article">
+                                <h2 class="header-tertiary-title">We’re just getting started</h2>
+                                <p class="about-team-text">At Industria9, we're experiencing rapid growth and continuously seek passionate, dynamic, and talented individuals to join our global team.</p>
+                                <p class="about-team-text">Our philosophy is straightforward: assemble a diverse team of passionate individuals and cultivate a culture that enables you to excel. Learn more about our approach below.</p>
 
-                        <div class="home-service-link">
-                            <a href="#">Read all blogs</a>
-                            <img src="./assets/images/home/up-arrow-icon.svg" alt="">
-                        </div>
-                    </header>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div>
-                                <figure><img class="w-100" src="assets/images/blog/blog-4.png" alt=""></figure>
-                                <div class="align-items-center blog-card d-flex">
-                                    <div>
-                                        <div class="d-flex justify-content-between px-4 ">
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div class="name-bar me-2"></div>
-                                                <p>Jhon Lock</p>
-                                            </div>
-                                            <p>April 16, 2024</p>
+                                <div>
+                                    <a href="#" class="hero-btn-link">
+                                        <button class="hero-btn btn-bg3 white-text title-secondary">We’re hiring</button>
+                                        <div class="newsletter-btn" type="button" id="button-addon2">
+                                            <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
                                         </div>
-            
-                                        <h1 class="blog-card-heading">Eco-Friendly Innovations in Factory Construction</h1>
-                                    </div>
-                                    <a href="#">
-                                        <figure class="card-arrow"><img src="assets/images/blog/arrow.svg" alt=""></figure>
                                     </a>
-            
                                 </div>
                             </div>
+                            
                         </div>
 
                         <div class="col-lg-6">
-                            <div>
-                                <figure><img class="w-100" src="assets/images/blog/blog-5.png" alt=""></figure>
-                                <div class="blog-card d-flex">
-                                    <div>
-                                        <div class="d-flex justify-content-between  px-4">
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div class="name-bar me-2"></div>
-                                                <p>Jhon Lock</p>
-                                            </div>
-                                            <p>April 16, 2024</p>
-                                        </div>
-            
-                                        <h1 class="blog-card-heading">Eco-Friendly Innovations in Factory Construction</h1>
-                                    </div>
-                                    <figure class="card-arrow"><img src="assets/images/blog/arrow.svg" alt=""></figure>
-            
-                                </div>
-                            </div>
+                            <img class="w-100" src="./assets/images/about/about-team.png" alt="about team">
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End: Home1 latest blog -->
-
-            <!-- Start: Call to action -->
-            <section class="call-action">
-                <div class="container">
-                    <div class="row gx-0">
-                        <div class="col-lg-4">
-                                <img class="call-acition-left" src="./assets/images/home/call-action-left.png" alt="call to action">          
-                        </div>
-
-                        <div class="col-lg-8">
-                            <figure>
-                                <img class="w-100" src="./assets/images/home/call-action-top-right.svg" alt="call to action">
-                            </figure>
-
-                            <div class="call-action-bg">
-                                <div class="call-action-header">
-                                    <h2 class="call-action-title">Let’s Build <span class="call-action-text">Together</span></h2>
-                                </div>
-
-                                <div class="text-center">
-                                    <a href="#">
-                                    <button class="call-action-btn primary-btn title-secondary">Share your dream! <img src="./assets/images/home/up-arrow-white.svg" alt="up arrow"></button>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End: Call to action -->
+            <!-- Start: About team -->
 
             <!-- Start: Footer -->
             <section class="footer">
