@@ -56,6 +56,17 @@
 }
 }
 @media screen and (max-width: 992px) {
+    /* Home1 team */
+    .home1-team-header{
+        flex-direction: column;
+        justify-content: center
+        ;
+    }
+
+    .home1-team-content{
+        margin-top: 30px;
+    }
+
 /* Primary hero section */
 .primary-hero-title {
     margin-top: 20px;
@@ -92,6 +103,12 @@
     /* Home1 service */
     .home1-service-card-number{
         padding: 10px;
+    }
+
+    .home1-service-header{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
     
     /* Service introduction */
