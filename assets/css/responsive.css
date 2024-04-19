@@ -1,0 +1,155 @@
+/* Mobile screen */
+@media screen and (max-width: 1228px){
+    /* Primary hero section */
+    .primary-hero-content {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+    }
+    /* Home3 benifits */
+    .benifits-img{
+        width: 100%;
+    }
+
+    /* home3 contact */
+    .home3-contact-img{
+        width: 100%; 
+    }
+
+    /* home3 serivce */
+    .home3-hover-img{
+        display: none;
+    }
+
+    .home3-service-title{
+        background: #13860F;
+    }
+
+    /* Home1 award */
+    .award-bridge-img{
+        display: none;
+    }
+
+    /* Home2 hero section */
+    .home2-hero-social{
+        display: none;
+    }
+
+    /* FAQ 3 */
+    .faq-3-contact-question{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+}
+
+@media screen and (max-width: 768px){
+    /* Home2 project */
+.home2-project-img-description{
+    display: none;
+}
+
+.title-img-header{
+    padding-bottom: 45px;
+}
+}
+@media screen and (max-width: 992px) {
+/* Primary hero section */
+.primary-hero-title {
+    margin-top: 20px;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.breadcrumb-content .breadcrumb-item {
+    font-size: 14px;
+    line-height: 27px;
+}
+    /* Home3 contact */
+    .home3-contact-form{
+        width: 100%;
+    }
+
+    /* Build together */
+    .build-together{
+        height: 100%
+    }
+
+    .build-together-content-mobile{
+        background: #3D3D3D;
+        text-align: center;
+        max-width: 530px;
+        min-height: 500px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /* Home1 service */
+    .home1-service-card-number{
+        padding: 10px;
+    }
+    
+    /* Service introduction */
+    .service-intro-text{
+        padding-left: 0;
+    }
+
+    /* Hom2 project */
+    .home2-project-img {
+        text-align: center;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    /* Blog call to action */
+    .blog-call-action-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blog-form-text{
+        text-align: center;
+    }
+
+    /* Home2 hero section */
+    .home2-hero-header{
+        padding: 80px 0;
+      }
+      .home2-hero-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .home2-slider-bar {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        align-items: normal;
+    }
+
+    .home2-hero-subtitle {
+        padding-top: 20px;
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--white);
+    }
+
+    /* Home1 hero section */
+      .hero-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        font-family: 'GeneralSans-Bold';
+    }
+
+    /* Team */
+    .home2-team-header{
+        margin-top: 80px;
+    }
+}
