@@ -52,6 +52,12 @@ figure {
   line-height: 26px;
 }
 
+.title-tertiary{
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'GeneralSans-Regular';
+}
+
 .text-underline{
   text-decoration: underline;
 }
@@ -90,8 +96,16 @@ figure {
   margin-bottom: 40px;
 }
 
+.mb-50{
+  margin-bottom: 50px;
+}
+
 .mb-16{
   margin-bottom: 16px;
+}
+
+.mt-80{
+  margin-top: 80px;
 }
 
 .mb-80{
@@ -145,6 +159,10 @@ figure {
   color: #656565
 }
 
+.light-black{
+  color: #525252
+}
+
 .green-text{
   color: var(--green);
 }
@@ -179,6 +197,10 @@ figure {
 
 .btn-bg4{
   background: var(--green);
+}
+
+.btn-bg5{
+  background: #FFF0D3;
 }
 
  /* 
@@ -1050,6 +1072,29 @@ body {
   padding: 0 30px;
   align-items: center;
 }
+
+.home2-hero-social{
+  border-right: 1px solid var(--secondary);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+    transform: rotate(180deg);
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white);
+}
 /* 
   *************************
   *  Home2 about
@@ -1813,7 +1858,7 @@ body {
 .primary-hero-content{
   position: absolute;
   top: 50%;
-  left: 15%;
+  left: 22%;
   transform: translate(-50%, -50%);
 }
 
@@ -2636,6 +2681,126 @@ body {
   width: 40px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+/* 
+  *************************
+  *  Team
+  *************************
+*/
+.team-1993-img{
+  text-align: center;
+  padding-top: 130px;
+}
+
+.home2-team-header{
+    position: relative;
+    background-image: url(../images/home2/home2-team-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    margin-top: -55px;
+    height: 451px;
+}
+
+/* Team history */
+.team-history{
+  background-image: url(../images/team/dot-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  margin-top: 130px;
+}
+
+.team-history-header{
+  max-width: 970px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.team-history-header p{
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--black-secondary);
+}
+
+/* 
+  *************************
+  *  FAQ 1
+  *************************
+*/
+.faq-1{
+  padding-top: 130px;
+}
+
+.faq-left-question{
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.faq-left-answer{
+  font-size: 16px;
+  line-height: 27px;
+  font-family: 'GeneralSans-Regular';
+}
+/* 
+  *************************
+  *  FAQ 2
+  *************************
+*/
+.faq-2{
+  padding: 100px 0;
+  margin-top: 130px;
+  background: #FFF0D3;
+}
+
+.faq2-feedback{
+    background-color: var(--primary);
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.faq2-feedback h4{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  color: var(--white);
+  padding-bottom: 10px;
+}
+
+.faq2-feedback p{
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white);
+}
+
+.faq-2-newsletter-btn{
+    border-left: none !important;
+    border: 1px solid #FFF0D3;
+    background: transparent;
+    padding: 10px 22px;
+}
+
+/* 
+  *************************
+  *  FAQ 3
+  *************************
+*/
+.faq-3{
+  padding-top: 130px;
+}
+
+
+.faq-3-contact-question{
+  display: flex;
+  background: #FFF0D3;
+  padding: 32px;
+  justify-content: space-between;
   align-items: center;
 }
 

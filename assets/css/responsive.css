@@ -30,6 +30,19 @@
     .award-bridge-img{
         display: none;
     }
+
+    /* Home2 hero section */
+    .home2-hero-social{
+        display: none;
+    }
+
+    /* FAQ 3 */
+    .faq-3-contact-question{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
 }
 
 @media screen and (max-width: 768px){
@@ -133,5 +146,10 @@
         font-weight: 700;
         line-height: 42px;
         font-family: 'GeneralSans-Bold';
+    }
+
+    /* Team */
+    .home2-team-header{
+        margin-top: 80px;
     }
 }

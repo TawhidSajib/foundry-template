@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <title>Home 2 - Foundry</title>
+        <title>Home - Foundry</title>
 
         <!-- Favicon -->
         <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" > -->
@@ -30,18 +30,22 @@
         <!-- Magnific Css -->
         <link rel="stylesheet" href="./assets/css/magnific.min.css">
 
-         <!-- Custom CSS -->
-         <link rel="stylesheet" href="./assets/css/custom.css" >
+        <!-- Mobile menu stylesheet -->
+        <!-- <link rel="stylesheet" href="./assets/css/mobile-menu.css"> -->
 
-         <!-- Responsive CSS -->
-         <link rel="stylesheet" href="./assets/css/responsive.css">
- 
-         <!-- Mobile Menu CSS -->
-         <link rel="stylesheet" href="./assets/css/mobile-menu.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./assets/css/custom.css" >
+
+        <!-- Responsive CSS -->
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+
+        <!-- Mobile Menu CSS -->
+        <link rel="stylesheet" href="./assets/css/mobile-menu.css">
 
     </head>
-    <body> 
+    <body>
         <main>
+            <!-- Mobile menu -->
             <!-- Mobile Menu -->
             <nav id="mobile-nav" class="d-xl-none">
                 <ul class="right-nav">
@@ -110,50 +114,54 @@
               </nav>
             <!-- Mobile menu -->
 
-            <!-- Start: Hero section -->
-            <section class="home2-hero-section">
-                <!-- Start: Navigation -->
-            <section class="nav-section bg-transparent d-xl-flex d-none">
+            <!-- Start: Navigation -->
+            <section class="nav-section bg-transparent d-lg-flex d-none">
                 <div class="container"> 
                     <nav class="nav-menu">
                         <figure>
-                            <img src="./assets/images/logo/logo-white.svg" alt="logo">
+                            <img src="./assets/images/logo/logo-black.svg" alt="logo">
                         </figure>
                         <div class="menu-list d-lg-inline-block d-none">
                             <ul>
+                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="home2-nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
                                     <div class="dropdown-menu dropdown-menu-end animate slideIn">
                                         <a class="dropdown-item" href="./index-1.html">Home 1</a>
                                         <a class="dropdown-item" href="./index-2.html">Home 2</a>
                                     </div>
                                     </div>
                                 </li>
+                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="home2-nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
                                     <div class="dropdown-menu dropdown-menu-end animate slideIn">
                                         <a class="dropdown-item" href="./index-1.html">Home 1</a>
                                         <a class="dropdown-item" href="./index-2.html">Home 2</a>
                                     </div>
                                     </div>
                                 </li>
+                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="home2-nav-link">Services <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="nav-link">Services <i class="fa-solid fa-angle-down"></i></a>
                                     <div class="dropdown-menu dropdown-menu-end animate slideIn">
                                         <a class="dropdown-item" href="./index-1.html">Home 1</a>
                                         <a class="dropdown-item" href="./index-2.html">Home 2</a>
                                     </div>
                                     </div>
                                 </li>
+                                <li class="vertical-line"></li>
                                 <li class="nav-item">
-                                    <a class="home2-nav-link" href="#">Projects</a>
+                                    <a class="nav-link" href="#">Projects</a>
                                 </li>
+                                <li class="vertical-line"></li>
                                 <li class="nav-item">
-                                    <a class="home2-nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="#">Blog</a>
                                 </li>
+                                <li class="vertical-line"></li>
                             </ul>
                         </div>
                         <div>
@@ -163,207 +171,83 @@
                 </div>
             </section>
             <!-- End: Navigation -->
-            <div style="position: relative">
+
+            <!-- Start: Primary hero section -->
+            <section class="service-hero-bg">
                 <div class="container">
-                    <header class="home2-hero-header">
-                        <h2 class="home2-hero-title">PLAN BETTER, <br> BUILD TOGETHER.</h2>
-                        <p class="home2-hero-subtitle">Excellence Knows No Bounds. Elevating Standards Across <br> Continents, With Japan as Our Beacon</p>
-                    </header>
-                    <div class="home2-slider-bar">
-                        <img src="./assets/images/home2/home2-hero-slider1.svg" alt="hero slider">
-                        <div class="d-flex gap-5 home2-slider-bar-content">
-                            <div class="d-flex gap-4">
-                                <p class="title-secondary">2/5</p>
-                                <p class="title-secondary">BlueBay Gas Plant</p>
-                            </div>
-    
-                            <div class="d-flex">
-                                <img class="me-4 cursor-pointer" src="./assets/images/home2/arrow-left-black.svg" alt="left arrow">
-                                <img class="cursor-pointer" src="./assets/images/home2/arrow-right-black.svg" alt="right arrow">
-                            </div>
+                    <div class="primary-hero-img">
+                        <img class="w-100" src="./assets/images/about/about-hero-img.png" alt="about hero image">
+                        <div class="primary-hero-content">
+                            <!-- breadcrumbs -->
+                            <nav>
+                                <ul class="breadcrumb-content">
+                                  <li class="breadcrumb-item me-3"><a href="#"><img src="./assets/images/common-icon/home-icon.svg" alt="home icon"></a></li>
+                                  <li><i class="fa-solid fa-chevron-right me-3"></i></li>
+                                  <li class="breadcrumb-item"><a href="#">Our Team</a></li>
+                                </ul>
+                              </nav>
+                            <!-- breadcrumbs -->
+                              <h4 class="primary-hero-title">Our Team</h4>
                         </div>
                     </div>
-                    <div class="home2-hero-social">
-                            <p class="vertical-text">Based in Japan - Excelling Everywhere</p>
-
-                            <div class="d-flex align-items-center flex-column white-text ">
-                                <i class="fa-brands fa-linkedin-in mb-3"></i>
-                                <i class="fa-brands fa-facebook-f mb-3"></i>
-                                <i class="fa-brands fa-x-twitter mb-3"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                            </div>
-                   
-                    </div>
                 </div>
-            </div>
-
-             
             </section>
-            <!-- End: Hero section -->
+            <!-- End: Primary hero section -->
 
-            <!-- Start: Home2 about -->
-            <section class="home2-about">
-                <img class="home2-about-style" src="./assets/images/home2/home2-about-style.svg" alt="about style image">
+            <!-- Start: Project about -->
+            <section class="project-about">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-7">
-                            <header class="home2-about-header">
-                                <h2 class="header-secondary-title primary-text mb-4">About us</h2>
-                                <p class="title-secondary black-text">Established in 1981 by Jhon David, Foundry9 began as Foundry Construction, evolving into Foundry Ltd in 2007.</p>
-                            </header>
-                            <div class="row">
-                                <div class="col-lg-6 mb-60">
-                                    <div class="home2-about-content">
-                                        <img src="./assets/images/home2/about-icon1.svg" alt="about icon1">
-                                        <h4 class="header-secondary-title black-text">700+</h4>
-                                        <p class="home2-about-content-subtitle">Completed projects with success</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 mb-60">
-                                    <div class="home2-about-content">
-                                        <img src="./assets/images/home2/about-icon2.svg" alt="about icon2">
-                                        <h4 class="header-secondary-title black-text">1.3B</h4>
-                                        <p class="home2-about-content-subtitle">Combined value</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="home2-about-content">
-                                        <img src="./assets/images/home2/about-icon3.svg" alt="about icon3">
-                                        <h4 class="header-secondary-title black-text">17+</h4>
-                                        <p class="home2-about-content-subtitle">Years of excellence world wide</p>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="home2-about-content">
-                                        <img src="./assets/images/home2/about-icon4.svg" alt="about icon4">
-                                        <h4 class="header-secondary-title black-text">1000+</h4>
-                                        <p class="home2-about-content-subtitle">Plants & equipment's</p>
-                                    </div>
-                                </div>
+                        <div class="col-lg-3">
+                            <div class="text-center">
+                                <img src="./assets/images/project/about-icon1.svg" alt="about icon">
+                                <h4 class="project-about-title">1.3B</h4>
+                                <p class="title-secondary black-text">Infrastructure Delivered</p>
                             </div>
                         </div>
 
-                        <div class="col-lg-5">
-                            <img class="h-100 w-100" src="./assets/images/home2/home2-about.png" alt="about image">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End: Home2 about -->
-
-            <!-- Start: Home2 service -->
-            <section class="home2-service">
-                <div class="container">
-                    <div class="d-flex justify-content-between mb-60">
-                        <h2 class="header-secondary-title white-text">Services to Build <br> <span class="primary-text">Your Dream</span></h2>
-                        <img src="./assets/images/home2/spark-icon.svg" alt="spark icon">
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="home2-service-left">
-                                <img class="w-100" src="./assets/images/home2/home2-service.png" alt="service image">
+                        <div class="col-lg-3">
+                            <div class="text-center">
+                                <img src="./assets/images/project/about-icon2.svg" alt="about icon">
+                                <h4 class="project-about-title">255+</h4>
+                                <p class="title-secondary black-text">Happy client’s worldwide </p>
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
-                            <div class="home2-service-content">
-                                <div class="home2-service-item">
-                                    <p class="home2-service-item-text white-text">Residential Construction</p>
-                                    <div class="home2-service-img">
-                                        <img src="./assets/images/home2/service-hover-img1.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
+                        <div class="col-lg-3">
+                            <div class="text-center">
+                                <img src="./assets/images/project/about-icon3.svg" alt="about icon">
+                                <h4 class="project-about-title">1000+</h4>
+                                <p class="title-secondary black-text">IPlants & equipment's</p>
                             </div>
+                        </div>
 
-                            <div class="home2-service-content">
-                                <div class="home2-service-item">
-                                    <p class="home2-service-item-text white-text">Commercial Construction</p>
-                                    <div class="home2-service-img">
-                                        <img src="./assets/images/home2/service-hover-img1.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
-                            </div>
-
-                            <div class="home2-service-content">
-                                <div class="home2-service-item">
-                                    <p class="home2-service-item-text white-text">Structural Engineering</p>
-                                    <div class="home2-service-img">
-                                        <img src="./assets/images/home2/service-hover-img1.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
-                            </div>
-
-                            <div class="home2-service-content">
-                                <div class="home2-service-item">
-                                    <p class="home2-service-item-text white-text">Architectural Design</p>
-                                    <div class="home2-service-img">
-                                        <img src="./assets/images/home2/service-hover-img1.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
-                            </div>
-
-                            <div class="home2-service-content">
-                                <div class="home2-service-item">
-                                    <p class="home2-service-item-text white-text">Interior Design</p>
-                                    <div class="home2-service-img">
-                                        <img src="./assets/images/home2/service-hover-img1.svg" alt="">
-                                    </div>
-                                </div>
-
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
+                        <div class="col-lg-3">
+                            <div class="text-center">
+                                <img src="./assets/images/project/about-icon4.svg" alt="about icon">
+                                <h4 class="project-about-title">17+</h4>
+                                <p class="title-secondary black-text">Years of excellence world wide</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- End: Home2 service -->
-
-             <!-- Start: Home2 project -->
-             <section class="home2-project">
-                <div class="container">
-                    <header class="text-center">
-                        <h2 class="header-secondary-title black-text">A <span class="primary-text">Vast Portfolio</span> of <br> Diverse Projects</h2>
-                    </header>
-                    <div class="text-center d-lg-block d-none">
-                        <img class="w-100" src="./assets/images/home/home1-team-1993.svg" alt="1993">
-                    </div>
-                    <div class="home2-project-img">
-                        <img class="w-100" src="./assets/images/home2/project1.png" alt="project 1">
-                        <div class="home2-project-img-description">
-                            <div>
-                                <h4>Mavic SkyRise Haven</h4>
-                                <p>Maple Street,  Ottawa</p>
-                            </div>
-
-                            <div>
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End: Home2 project -->
+            <!-- End: Project about -->
 
             <!-- Start: Home2 team -->
             <section>
-                <header class="text-center home2-team">
+                <div class="container">
+                    <div class="team-1993-img d-lg-block d-none">
+                        <img class="w-100" src="./assets/images/home/home1-team-1993.svg" alt="home team">
+                    </div>
+                </div>
+                <header class="text-center home2-team-header">
                     <h2 class="header-secondary-title white-text">Meet Our Leaders <br> <span class="primary-text">Behind Spark</span></h2>
                 </header>
                 <div class="container">
                     <div class="home2-team-membar">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mb-lg-0 mb-4">
                                 <div class="home2-team-content">
                                     <div class="home2-team-img">
                                         <img src="./assets/images/home2/team1.png" alt="team 1">
@@ -380,7 +264,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 mb-lg-0 mb-4">
                                 <div class="home2-team-content">
                                     <div class="home2-team-img">
                                         <img src="./assets/images/home2/team2.png" alt="team 2">
@@ -428,155 +312,219 @@
             </section>
             <!-- End: Home2 team -->
 
-            <!-- Start: Home2 testimonial -->
-            <section class="home2-testimonial">
+            <!-- Start: Team history -->
+            <section class="team-history">
                 <div class="container">
-                    <div class="row gx-5">
-                        <div class="col-lg-5">
-                            <img class="w-100 h-100" src="./assets/images/home2/home2-testimonial.png" alt="testimonial image">
-                        </div>
-
-                        <div class="col-lg-7">
-                            <div>
-                                <h2 class="home2-testimonial-title">Client Feedback <br> <span class="primary-text">Real Stories, Real Satisfaction</span></h2>
-                                <p class="home2-testimonial-description">I can't say enough good things about Foundry9 Construction. They made the renovation process stress-free and enjoyable from start to finish. Their team of experts delivered outstanding results, and we're thrilled with our newly renovated space!</p>
-                                <div class="home2-testimonial-info">
-                                    <h4>— Renee Wells</h4>
-                                    <p>Project Manager, Shanta Tales</p>
-                                </div>
-
-                                <div class="mt-5">
-                                    <img class="me-3 cursor-pointer" src="./assets/images/home2/left-arrow.svg" alt="left arrow">
-                                    <img class="cursor-pointer" src="./assets/images/home2/right-arrow.svg" alt="right arrow">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <header class="team-history-header">
+                        <p class="pb-5">We work for you since 1993.</p>
+                        <p>Industria9 stands among Japan premier construction and engineering firms. Our dedicated team of construction and design engineering experts takes on the industry's most intricate and gratifying projects.</p>
+                    </header>
                 </div>
             </section>
-            <!-- End: Home2 testimonial -->
+            <!-- End: Team history -->
 
-            <!-- Start: Home2 latest blog -->
-            <section class="home1-latest-blog">
+            <!-- Start: Team membar -->
+            <section class="team-membar">
                 <div class="container">
-                    <header class="text-center mb-60">
-                        <div>
-                            <h2 class="header-title">Our Latest <span class="primary-text">Blog</span></h2>
-                        </div>
+                    <header class="text-center">
+                    <h2 class="header-secondary-title black-text">Get to Know Our <br> <span class="primary-text">Elite Crew</span></h2>
                     </header>
 
                     <div class="row">
                         <div class="col-lg-4">
                             <div>
-                                <figure><img class="w-100" src="./assets/images/blog/home2-blog1.png" alt=""></figure>
-                                <div class="justify-content-between blog-card d-flex">
-                                    <div class="pt-4">
-                                        <div class="d-flex justify-content-between px-4 ">
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div class="name-bar me-2"></div>
-                                                <p>Jhon Lock</p>
-                                            </div>
-                                            <p>April 16, 2024</p>
-                                        </div>
-            
-                                        <h1 class="blog-card-heading">Inspiring Ideas for Construction Professionals</h1>
+                                <div class="home2-team-img">
+                                    <img src="./assets/images/home2/team3.png" alt="team 3">
+                                    <div class="home2-team-text-overlay">
+                                        <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                        <div><i class="fa-brands fa-instagram"></i></div>                                           
                                     </div>
-                                    <a href="#">
-                                        <figure class="card-arrow"><img src="assets/images/blog/arrow.svg" alt=""></figure>
-                                    </a>
-            
                                 </div>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="home2-team-name">Jhon Patari</h4>
+                                <p class="primary-text title-secondary">HR Director</p>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
                             <div>
-                                <figure><img class="w-100" src="assets/images/blog/home2-blog2.png" alt=""></figure>
-                                <div class="justify-content-between blog-card d-flex">
-                                    <div class="pt-4">
-                                        <div class="d-flex justify-content-between px-4 ">
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div class="name-bar me-2"></div>
-                                                <p>Ariful Haque</p>
-                                            </div>
-                                            <p>May 07, 2024</p>
-                                        </div>
-            
-                                        <h1 class="blog-card-heading">The Heart of Home Exploring Interior Design Principles</h1>
+                                <div class="home2-team-img">
+                                    <img src="./assets/images/home2/team3.png" alt="team 3">
+                                    <div class="home2-team-text-overlay">
+                                        <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                        <div><i class="fa-brands fa-instagram"></i></div>                                           
                                     </div>
-                                    <a href="#">
-                                        <figure class="card-arrow"><img src="assets/images/blog/arrow.svg" alt=""></figure>
-                                    </a>
-            
                                 </div>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="home2-team-name">Jhon Patari</h4>
+                                <p class="primary-text title-secondary">HR Director</p>
                             </div>
                         </div>
 
                         <div class="col-lg-4">
                             <div>
-                                <figure><img class="w-100" src="./assets/images/blog/home2-blog3.png" alt=""></figure>
-                                <div class="justify-content-between blog-card d-flex">
-                                    <div class="pt-4">
-                                        <div class="d-flex justify-content-between px-4 ">
-                                            <div class="d-flex justify-content-center align-items-center">
-                                                <div class="name-bar me-2"></div>
-                                                <p>Ariful Haque</p>
-                                            </div>
-                                            <p>May 07, 2024</p>
-                                        </div>
-            
-                                        <h1 class="blog-card-heading">Construction Chronicles Tales of Triumph and Transformation</h1>
+                                <div class="home2-team-img">
+                                    <img src="./assets/images/home2/team3.png" alt="team 3">
+                                    <div class="home2-team-text-overlay">
+                                        <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                        <div><i class="fa-brands fa-instagram"></i></div>                                           
                                     </div>
-                                    <a href="#">
-                                        <figure class="card-arrow"><img src="assets/images/blog/arrow.svg" alt=""></figure>
-                                    </a>
-            
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="hero-btn-link">
-                            <button class="hero-btn btn-bg3 white-text title-secondary">Read all blogs</button>
-                            <div class="newsletter-btn" type="button" id="button-addon2">
-                                <img src="./assets/images/home/up-arrow-icon.svg" alt="up arrow">
+                            <div class="mt-4">
+                                <h4 class="home2-team-name">Jhon Patari</h4>
+                                <p class="primary-text title-secondary">HR Director</p>
                             </div>
-                        </a>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="home2-team-img">
+                                    <img class="team-hover-img" src="./assets/images/home2/team3.png" alt="team 3">
+                                    <div class="home2-team-text-overlay">
+                                        <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                        <div><i class="fa-brands fa-instagram"></i></div>                                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="home2-team-name">Jhon Patari</h4>
+                                <p class="primary-text title-secondary">HR Director</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="home2-team-img">
+                                    <img src="./assets/images/home2/team3.png" alt="team 3">
+                                    <div class="home2-team-text-overlay">
+                                        <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                        <div><i class="fa-brands fa-instagram"></i></div>                                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="home2-team-name">Jhon Patari</h4>
+                                <p class="primary-text title-secondary">HR Director</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4" >
+                            <div>
+                                <div class="home2-team-img">
+                                    <img src="./assets/images/home2/team3.png" alt="team 3">
+                                    <div class="home2-team-text-overlay">
+                                        <div class="mb-40"><i class="fa-brands fa-linkedin-in"></i></div>
+                                        <div class="mb-40"><i class="fa-brands fa-x-twitter"></i></div>
+                                        <div><i class="fa-brands fa-instagram"></i></div>                                           
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h4 class="home2-team-name">Jhon Patari</h4>
+                                <p class="primary-text title-secondary">HR Director</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
-            <!-- End: Home2 latest blog -->
+            <!-- End: Team membar -->
+
+            <!-- Start: Home1 award -->
+            <section class="home1-award mt-130">
+                <img class="award-bridge-img" src="./assets/images/home/award-bridge-img.png" alt="bridge image">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div>
+                                    <h2 class="header-title white-text mb-60">Awards & Milestones</h2>
+                                    <p class="title-secondary white-text home1-award-subtitle">Fonudy9 A Talent in Construction. With unwavering ethical standards and transparent communication, Fonudy9 stands as an exemplary collaborator in every project. Their deep expertise and respect for teamwork shine through, fostering lasting relationships beyond completion.</p>
+                                    <div>
+                                        <button class="primary-btn title-secondary home1-award-btn">Share your dream! <img src="./assets/images/home/up-arrow-white.svg" alt="up arrow"></button>
+                                        <img src="./assets/images/home/award-arrow-shape.svg" alt="arrow shape">
+                                    </div>
+   
+                                </div>
+                            </div>
+    
+                            <div class="col-lg-6">
+                                <div class="row home1-award-icon">
+                                    <div class="col-lg-6 text-center mb-60">
+                                        <img src="./assets/images/home/award-1.svg" alt="award 1">
+                                    </div>
+    
+                                    <div class="col-lg-6 text-center mb-60">
+                                        <img src="./assets/images/home/award-2.svg" alt="award 2">
+                                    </div>
+    
+                                    <div class="col-lg-6 text-center mb-60">
+                                        <img src="./assets/images/home/award-3.svg" alt="award 3">
+                                    </div>
+                                    
+                                    <div class="col-lg-6 text-center mb-60">
+                                        <img src="./assets/images/home/award-4.svg" alt="award 4">
+                                    </div>
+    
+                                    <div class="col-lg-6 text-center mb-60">
+                                        <img src="./assets/images/home/award-5.svg" alt="award 5">
+                                    </div>
+                                    
+                                    <div class="col-lg-6 text-center mb-60">
+                                        <img src="./assets/images/home/award-6.svg" alt="award 6">
+                                    </div>
+    
+                                    <div class="col-lg-6 text-center">
+                                        <img src="./assets/images/home/award-7.svg" alt="award 7">
+                                    </div>
+                                    
+                                    <div class="col-lg-6 text-center">
+                                        <img src="./assets/images/home/award-8.svg" alt="award 8">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End: Home1 award -->
 
             <!-- Start: Call to action -->
-            <section class="call-action">
-                <div class="container">
-                    <div class="row gx-0">
-                        <div class="col-lg-4">
-                                <img class="call-acition-left" src="./assets/images/home2/home2-call-action-left.png" alt="call to action">          
-                        </div>
+        <section class="call-action">
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-lg-4">
+                            <img class="call-acition-left" src="./assets/images/home/call-action-left.png" alt="call to action">          
+                    </div>
 
-                        <div class="col-lg-8">
-                            <figure>
-                                <img class="w-100" src="./assets/images/home/call-action-top-right.svg" alt="call to action">
-                            </figure>
+                    <div class="col-lg-8">
+                        <figure>
+                            <img class="w-100" src="./assets/images/home/call-action-top-right.svg" alt="call to action">
+                        </figure>
 
-                            <div class="call-action-bg">
-                                <div class="call-action-header">
-                                    <h2 class="call-action-title">Let’s Build <span class="call-action-text">Together</span></h2>
-                                </div>
+                        <div class="call-action-bg">
+                            <div class="call-action-header">
+                                <h2 class="call-action-title">Let’s Build <span class="call-action-text">Together</span></h2>
+                            </div>
 
-                                <div class="text-center">
-                                    <a href="#">
-                                    <button class="call-action-btn primary-btn title-secondary">Share your dream! <img src="./assets/images/home/up-arrow-white.svg" alt="up arrow"></button>
-                                    </a>
-                                </div>
+                            <div class="text-center">
+                                <a href="#">
+                                <button class="call-action-btn primary-btn title-secondary">Share your dream! <img src="./assets/images/home/up-arrow-white.svg" alt="up arrow"></button>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- End: Call to action -->
+            </div>
+        </section>
+        <!-- End: Call to action -->
 
             <!-- Start: Footer -->
             <section class="footer">

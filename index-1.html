@@ -79,8 +79,76 @@
             </section>
             <!-- End: Announcement -->
 
+            <!-- Mobile Menu -->
+            <nav id="mobile-nav" class="d-xl-none">
+                <ul class="right-nav">
+                    <li>
+                      <img class="moblie-logo" src="./assets/images/logo/logo-black.svg" alt="Logo">
+                    </li>
+                  </ul>
+                <label for="toggleMainNav" class="hamburger-menu"></label>
+                <input type="checkbox" id="toggleMainNav" class="check-toggle">
+                <label for="toggleMainNav" class="menu-overlay"></label>
+                <div class="main-nav-holder">
+                  <ul class="main-nav">
+                    <li class="close-nav">
+                      <label for="toggleMainNav"></label>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelMen" class="check-toggle">
+                        <label for="labelMen">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelproject" class="check-toggle">
+                        <label for="labelproject">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact Us</a>
+                      </li>
+                    <li>
+                      <a href="./contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <!-- Mobile menu -->
+
             <!-- Start: Navigation -->
-            <section class="nav-section">
+            <section class="nav-section bg-transparent d-xl-flex d-none">
                 <div class="container"> 
                     <nav class="nav-menu">
                         <figure>
@@ -370,8 +438,8 @@
                             </div>
                         </a>
                     </header>
-                    <div class="text-center">
-                        <img src="./assets/images/home/home1-team-1993.svg" alt="since 1993">
+                    <div class="text-center d-lg-block d-none">
+                        <img class="w-100" src="./assets/images/home/home1-team-1993.svg" alt="since 1993">
                     </div>
                     <div class="row home1-team-content">
                         <div class="col-lg-8">
