@@ -92,4 +92,46 @@
         margin-top: 50px;
         position: relative;
     }
+
+    /* Blog call to action */
+    .blog-call-action-form{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .blog-form-text{
+        text-align: center;
+    }
+
+    /* Home2 hero section */
+    .home2-hero-header{
+        padding: 80px 0;
+      }
+      .home2-hero-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .home2-slider-bar {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        align-items: normal;
+    }
+
+    .home2-hero-subtitle {
+        padding-top: 20px;
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--white);
+    }
+
+    /* Home1 hero section */
+      .hero-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        font-family: 'GeneralSans-Bold';
+    }
 }

@@ -30,19 +30,90 @@
         <!-- Magnific Css -->
         <link rel="stylesheet" href="./assets/css/magnific.min.css">
 
-        <!-- Mobile menu stylesheet -->
-        <!-- <link rel="stylesheet" href="./assets/css/mobile-menu.css"> -->
+         <!-- Custom CSS -->
+         <link rel="stylesheet" href="./assets/css/custom.css" >
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="./assets/css/custom.css" >
+         <!-- Responsive CSS -->
+         <link rel="stylesheet" href="./assets/css/responsive.css">
+ 
+         <!-- Mobile Menu CSS -->
+         <link rel="stylesheet" href="./assets/css/mobile-menu.css">
 
     </head>
     <body> 
         <main>
+            <!-- Mobile Menu -->
+            <nav id="mobile-nav" class="d-xl-none">
+                <ul class="right-nav">
+                    <li>
+                      <img class="moblie-logo" src="./assets/images/logo/logo-black.svg" alt="Logo">
+                    </li>
+                  </ul>
+                <label for="toggleMainNav" class="hamburger-menu"></label>
+                <input type="checkbox" id="toggleMainNav" class="check-toggle">
+                <label for="toggleMainNav" class="menu-overlay"></label>
+                <div class="main-nav-holder">
+                  <ul class="main-nav">
+                    <li class="close-nav">
+                      <label for="toggleMainNav"></label>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelBlog" class="check-toggle">
+                        <label for="labelBlog">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelMen" class="check-toggle">
+                        <label for="labelMen">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <input type="checkbox" id="labelproject" class="check-toggle">
+                        <label for="labelproject">Blog</label>
+                
+                        <i class="menu-caret"></i>
+                        <ul class="submenu">
+                          <li>
+                            <a href="./blog.html">Blog</a>
+                          </li>
+                          <li>
+                            <a href="./single-blog.html">Blog Details</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact Us</a>
+                      </li>
+                    <li>
+                      <a href="./contact.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <!-- Mobile menu -->
+
             <!-- Start: Hero section -->
             <section class="home2-hero-section">
                 <!-- Start: Navigation -->
-            <div class="home2-nav-section">
+            <section class="nav-section bg-transparent d-xl-flex d-none">
                 <div class="container"> 
                     <nav class="nav-menu">
                         <figure>
@@ -50,67 +121,65 @@
                         </figure>
                         <div class="menu-list d-lg-inline-block d-none">
                             <ul>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="home2-nav-link">Home <i class="fa-solid fa-angle-down"></i></a>
                                     <div class="dropdown-menu dropdown-menu-end animate slideIn">
                                         <a class="dropdown-item" href="./index-1.html">Home 1</a>
                                         <a class="dropdown-item" href="./index-2.html">Home 2</a>
                                     </div>
                                     </div>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="home2-nav-link">Pages <i class="fa-solid fa-angle-down"></i></a>
                                     <div class="dropdown-menu dropdown-menu-end animate slideIn">
                                         <a class="dropdown-item" href="./index-1.html">Home 1</a>
                                         <a class="dropdown-item" href="./index-2.html">Home 2</a>
                                     </div>
                                     </div>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
                                     <div class="dropdown">
-                                        <a class="nav-link">Services <i class="fa-solid fa-angle-down"></i></a>
+                                        <a class="home2-nav-link">Services <i class="fa-solid fa-angle-down"></i></a>
                                     <div class="dropdown-menu dropdown-menu-end animate slideIn">
                                         <a class="dropdown-item" href="./index-1.html">Home 1</a>
                                         <a class="dropdown-item" href="./index-2.html">Home 2</a>
                                     </div>
                                     </div>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Projects</a>
+                                    <a class="home2-nav-link" href="#">Projects</a>
                                 </li>
-                                <li class="vertical-line"></li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="home2-nav-link" href="#">Blog</a>
                                 </li>
-                                <li class="vertical-line"></li>
                             </ul>
                         </div>
                         <div>
-                            <button class="nav-btn">Get a quote</button>
+                            <button class="nav-btn btn-bg3">Get a quote</button>
                         </div>
                     </nav>
                 </div>
-            </div>
+            </section>
             <!-- End: Navigation -->
 
                 <div class="container">
-
-                    <div class="slider-bar">
-                        <div class="d-flex gap-5 slider-bar-content">
+                    <header class="home2-hero-header">
+                        <h2 class="home2-hero-title">PLAN BETTER, <br> BUILD TOGETHER.</h2>
+                        <p class="home2-hero-subtitle">Excellence Knows No Bounds. Elevating Standards Across <br> Continents, With Japan as Our Beacon</p>
+                    </header>
+                    <div class="home2-slider-bar">
+                        <img src="./assets/images/home2/home2-hero-slider1.svg" alt="hero slider">
+                        <div class="d-flex gap-5 home2-slider-bar-content">
                             <div class="d-flex gap-4">
                                 <p class="title-secondary">2/5</p>
                                 <p class="title-secondary">BlueBay Gas Plant</p>
                             </div>
     
                             <div class="d-flex">
-                                <img class="me-4 cursor-pointer" src="./assets/images/home/left-arrow.svg" alt="left arrow">
-                                <img class="cursor-pointer" src="./assets/images/home/right-arrow.svg" alt="right arrow">
+                                <img class="me-4 cursor-pointer" src="./assets/images/home2/arrow-left-black.svg" alt="left arrow">
+                                <img class="cursor-pointer" src="./assets/images/home2/arrow-right-black.svg" alt="right arrow">
                             </div>
                         </div>
                     </div>
@@ -164,7 +233,7 @@
                         </div>
 
                         <div class="col-lg-5">
-                            <img class="h-100" src="./assets/images/home2/home2-about.png" alt="about image">
+                            <img class="h-100 w-100" src="./assets/images/home2/home2-about.png" alt="about image">
                         </div>
                     </div>
                 </div>
@@ -246,14 +315,14 @@
             </section>
             <!-- End: Home2 service -->
 
-            <!-- Start: Home2 project -->
-            <section class="home2-project">
+             <!-- Start: Home2 project -->
+             <section class="home2-project">
                 <div class="container">
                     <header class="text-center">
                         <h2 class="header-secondary-title black-text">A <span class="primary-text">Vast Portfolio</span> of <br> Diverse Projects</h2>
                     </header>
-                    <div class="text-center">
-                        <img src="./assets/images/home/home1-team-1993.svg" alt="1993">
+                    <div class="text-center d-lg-block d-none">
+                        <img class="w-100" src="./assets/images/home/home1-team-1993.svg" alt="1993">
                     </div>
                     <div class="home2-project-img">
                         <img class="w-100" src="./assets/images/home2/project1.png" alt="project 1">
@@ -381,18 +450,19 @@
                             <h2 class="header-title">Our Latest <span class="primary-text">Blog</span></h2>
                         </div>
                     </header>
+
                     <div class="row">
                         <div class="col-lg-4">
                             <div>
-                                <figure><img class="w-100" src="assets/images/blog/home2-blog1.png" alt="blog image"></figure>
-                                <div class="align-items-center blog-card d-flex">
-                                    <div class="blog-content">
-                                        <div class="d-flex justify-content-between px-4 pt-3">
+                                <figure><img class="w-100" src="./assets/images/blog/home2-blog1.png" alt=""></figure>
+                                <div class="justify-content-between blog-card d-flex">
+                                    <div class="pt-4">
+                                        <div class="d-flex justify-content-between px-4 ">
                                             <div class="d-flex justify-content-center align-items-center">
                                                 <div class="name-bar me-2"></div>
-                                                <p class="blog-text">Jhon Lock</p>
+                                                <p>Jhon Lock</p>
                                             </div>
-                                            <p class="blog-text">April 16, 2024</p>
+                                            <p>April 16, 2024</p>
                                         </div>
             
                                         <h1 class="blog-card-heading">Inspiring Ideas for Construction Professionals</h1>
@@ -405,17 +475,17 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4"> 
+                        <div class="col-lg-4">
                             <div>
-                                <figure><img class="w-100" src="assets/images/blog/home2-blog2.png" alt="blog image"></figure>
-                                <div class="align-items-center blog-card d-flex">
-                                    <div class="blog-content">
-                                        <div class="d-flex justify-content-between px-4 pt-3">
+                                <figure><img class="w-100" src="assets/images/blog/home2-blog2.png" alt=""></figure>
+                                <div class="justify-content-between blog-card d-flex">
+                                    <div class="pt-4">
+                                        <div class="d-flex justify-content-between px-4 ">
                                             <div class="d-flex justify-content-center align-items-center">
                                                 <div class="name-bar me-2"></div>
-                                                <p class="blog-text">Jhon Lock</p>
+                                                <p>Ariful Haque</p>
                                             </div>
-                                            <p class="blog-text">April 16, 2024</p>
+                                            <p>May 07, 2024</p>
                                         </div>
             
                                         <h1 class="blog-card-heading">The Heart of Home Exploring Interior Design Principles</h1>
@@ -430,15 +500,15 @@
 
                         <div class="col-lg-4">
                             <div>
-                                <figure><img class="w-100" src="assets/images/blog/home2-blog3.png" alt="blog image"></figure>
-                                <div class="align-items-center blog-card d-flex">
-                                    <div class="blog-content">
-                                        <div class="d-flex justify-content-between px-4 pt-3">
+                                <figure><img class="w-100" src="./assets/images/blog/home2-blog3.png" alt=""></figure>
+                                <div class="justify-content-between blog-card d-flex">
+                                    <div class="pt-4">
+                                        <div class="d-flex justify-content-between px-4 ">
                                             <div class="d-flex justify-content-center align-items-center">
                                                 <div class="name-bar me-2"></div>
-                                                <p class="blog-text">Jhon Lock</p>
+                                                <p>Ariful Haque</p>
                                             </div>
-                                            <p class="blog-text">April 16, 2024</p>
+                                            <p>May 07, 2024</p>
                                         </div>
             
                                         <h1 class="blog-card-heading">Construction Chronicles Tales of Triumph and Transformation</h1>
