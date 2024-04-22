@@ -56,6 +56,20 @@
 }
 }
 @media screen and (max-width: 992px) {
+    /* Custom class */
+    .header-secondary-title{
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 48px;
+      }
+
+      .header-title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 38px;
+      }
+      
+
     /* Home1 team */
     .home1-team-header{
         flex-direction: column;
@@ -168,5 +182,90 @@
     /* Team */
     .home2-team-header{
         margin-top: 80px;
+    }
+
+    /* Coming soon v1 */
+    .coming-soon-v1{
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: 100vh;
+      }
+
+      .coming-soon-v1-header{
+        padding-top: 50px;
+      }
+
+      .coming-soon-v1-title{
+        font-size: 32px;
+        line-height: 32px;
+      }
+
+      .coming-soon-v1-subtitle{
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      /* Contact team */
+      .contact-form {
+        padding-top: 80px;
+    }
+
+      .team-bg{
+        height: 100%;
+      }
+
+      .team-title {
+        font-size: 34px;
+        line-height: 48px;
+        padding-bottom: 30px;
+      }
+      
+      .background-image{
+        padding: 60px 0;
+      }
+
+      /* Contact team */
+      .contact-team {
+        padding-top: 80px;
+    }
+
+    /* Contact address */
+    .contact-address {
+        padding: 80px 0;
+    }
+    .contact-map-bg {
+        padding-left: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+      /* Coming soon v2 */
+      .coming-soon-v2-logo {
+        padding-top: 80px;
+    }
+
+    .coming-soon-v2-header {
+        padding-top: 80px;
+    }
+
+    .coming-soon-v2-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .coming-soon-v2-form {
+       display: flex;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    /* Error */
+    .error-content {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .error-content h2 {
+        padding-top: 70px;
     }
 }
