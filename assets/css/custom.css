@@ -370,14 +370,15 @@ body {
 
      /* 
   *************************
-  *  Hero section 
+  * Home1 Hero section 
   *************************
 */
 .hero-section{
   background-image: url('../images/home/hero-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 150px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   position: relative;
 }
 
@@ -809,7 +810,7 @@ body {
   *************************
 */
 .home1-testimonial{
-  padding: 130px 0;
+  padding-top: 130px;
 }
 
 .home1-testimonial-shape{
@@ -839,8 +840,9 @@ body {
 .home1-award{
  background: var(--black);
  padding-top: 110px;
- padding-bottom: 210px;
+ padding-bottom: 170px;
  position: relative;
+ margin-top: 130px
 }
 
 .award-bridge-img{
@@ -1147,6 +1149,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
+  padding-bottom: 0;
   margin-top: 130px;
 }
 
@@ -1252,6 +1255,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .home2-team-img img{
@@ -1316,6 +1320,7 @@ body {
 }
 
 .home2-testimonial-title{
+  margin-top: 0;
   font-size: 36px;
   line-height: 46px;
   font-weight: 600;
@@ -1480,7 +1485,8 @@ body {
   background-image: url('../images/home3/home3-project-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .home3-project-img{
@@ -1580,6 +1586,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: var(--white);
+  padding: 0;
 }
 
 .home3-service-img:hover .home-service-btn{
@@ -1620,7 +1627,8 @@ body {
   background-image: url('../images/home3/home3-project-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px
 }
 
 .home3-faq-subtitle{
@@ -1714,7 +1722,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 136px;
+  min-height: 100%;
   border-right: 1px solid #85F580;
   border-left: 1px solid #85F580;
   background: #F0FEEF;
@@ -1752,6 +1760,7 @@ body {
 */
 .home3-contact{
   padding-top: 130px;
+  padding-bottom: 0;
 }
 
 .home3-contact-form{
@@ -2473,6 +2482,10 @@ body {
   *  Blog section
   *************************
 */
+.blog-section{
+  padding-top: 130px;
+}
+
 .blog-item-title{
   font-size: 14px;
   line-height: 18px;
@@ -2581,6 +2594,9 @@ body {
   *  Blog details
   *************************
 */
+.blog-details{
+  padding-top: 130px;
+}
 
 .blog-heading-btn {
   border-radius: 0.75rem; /* Adjust the value as needed */
@@ -2704,7 +2720,11 @@ body {
     height: 451px;
 }
 
-/* Team history */
+/* 
+  *************************
+  *  Team history
+  *************************
+*/
 .team-history{
   background-image: url(../images/team/dot-bg.svg);
   background-size: cover;
@@ -2723,6 +2743,15 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: var(--black-secondary);
+}
+
+/* 
+  *************************
+  *  Team membar
+  *************************
+*/
+.team-membar{
+  padding: 130px 0;
 }
 
 /* 

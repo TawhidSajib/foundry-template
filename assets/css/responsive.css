@@ -1,4 +1,11 @@
 /* Mobile screen */
+@media screen and (max-width: 1368px){
+    /* Home1 award */
+    .award-bridge-img{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1228px){
     /* Primary hero section */
     .primary-hero-content {
@@ -8,30 +15,43 @@
         transform: translate(-50%, -50%);
     }
     /* Home3 benifits */
+    .home3-benifits {
+        padding-top: 80px;
+    }
+
     .benifits-img{
         width: 100%;
     }
 
     /* home3 contact */
+    .home3-contact {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     .home3-contact-img{
         width: 100%; 
     }
 
     /* home3 serivce */
+    .home3-service {
+        padding-top: 80px;
+    }
+
     .home3-hover-img{
         display: none;
     }
 
     .home3-service-title{
         background: #13860F;
-    }
-
-    /* Home1 award */
-    .award-bridge-img{
-        display: none;
+        padding: 10px;
     }
 
     /* Home2 hero section */
+    .home2-slider-bar-content {
+        padding: 0 20px;
+    }
+
     .home2-hero-social{
         display: none;
     }
@@ -47,6 +67,10 @@
 
 @media screen and (max-width: 768px){
     /* Home2 project */
+    .home2-project {
+        padding-top: 80px;
+    }
+
 .home2-project-img-description{
     display: none;
 }
@@ -63,6 +87,13 @@
         line-height: 48px;
       }
 
+      .hero-title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 42px;
+        font-family: 'GeneralSans-Bold';
+    }
+
       .header-title{
         font-size: 28px;
         font-weight: 600;
@@ -71,6 +102,11 @@
       
 
     /* Home1 team */
+    .home1-team {
+        padding: 80px 0;
+        margin-top: 80px;
+    }
+
     .home1-team-header{
         flex-direction: column;
         justify-content: center
@@ -79,6 +115,14 @@
 
     .home1-team-content{
         margin-top: 30px;
+    }
+
+    .home1-team-designation {
+        color: var(--white);
+    }
+
+    .home1-team-name {
+        color: var(--white);
     }
 
 /* Primary hero section */
@@ -114,7 +158,16 @@
         flex-direction: column;
     }
 
+    .build-together {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
     /* Home1 service */
+    .home1-service {
+        padding-top: 80px;
+    }
+
     .home1-service-card-number{
         padding: 10px;
     }
@@ -124,10 +177,23 @@
         justify-content: center;
         text-align: center;
     }
+
+    .home2-service-item-text {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .home2-service-content {
+        padding-bottom: 25px;
+    }
     
     /* Service introduction */
     .service-intro-text{
         padding-left: 0;
+    }
+
+    .service-intro {
+        padding-top: 80px;
     }
 
     /* Hom2 project */
@@ -172,11 +238,16 @@
     }
 
     /* Home1 hero section */
-      .hero-title {
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 42px;
-        font-family: 'GeneralSans-Bold';
+    .hero-section{
+        padding-top: 100px;
+      }
+
+    .hero-title p {
+        padding: 0px 10px;
+    }
+
+    .slider-bar-content {
+        width: 100%;
     }
 
     /* Team */
@@ -268,4 +339,224 @@
     .error-content h2 {
         padding-top: 70px;
     }
+
+    /* Pricing */
+    .pricing {
+        padding-bottom: 80px;
+    }
+
+    /* Pricing-1 */
+    .pricing-1 {
+        padding: 80px 0;
+    }
+
+    /* FAQ-1 */
+    .faq-1 {
+        padding-top: 80px;
+    }
+
+    /* FAQ-2 */
+    .faq-2 {
+        padding: 70px 0;
+        margin-top: 80px;
+    }
+
+    /* FAQ-3 */
+    .faq-3 {
+        padding-top: 80px;
+    }
+
+    /* CAll to action */
+    .call-action {
+        padding: 80px 0;
+    }
+
+    .call-action-bg {
+        padding: 70px 0;
+    }
+
+    .call-action-title {
+        font-size: 34px;
+        line-height: 44px;
+    }
+
+    /* Project about */
+    .project-about {
+        padding-top: 80px;
+    }
+
+    /* Team membar */
+    .team-membar{
+        padding: 80px 0;
+      }
+
+      /* Team history */
+      .team-history {
+        padding: 70px 0;
+        margin-top: 80px;
+    }
+      
+    /* Home1 award */
+    .home1-award {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    /* Blog details */
+    .blog-details {
+        padding-top: 80px;
+    }
+
+    .blog-heading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    /* Home1 latest blog */
+    .home1-latest-blog {
+        padding-top: 80px;
+    }
+
+    /* Blog call to action */
+    .blog-call-action {
+        padding: 80px 0;
+    }
+
+    /* Blog section */
+    .blog-section {
+        padding-top: 80px;
+    }
+
+    /* Home1 about */
+    .home1-about {
+        padding-top: 80px;
+    }
+
+    /* About timeline */
+    .about-timeline {
+        padding-top: 80px;
+    }
+
+    /* Home2 team */
+    .home2-team {
+        margin-top: 80px;
+    }
+
+    /* Home2 testimonial */
+    .home2-testimonial {
+        padding-top: 80px;
+        overflow-x: hidden;
+    }
+
+    .home2-testimonial-title{
+        margin-top: 20px;
+      }
+
+      .home2-testimonial-description {
+        padding-top: 30px;
+    }
+
+    /* About team */
+    .about-team {
+        padding: 80px 0;
+    }
+
+    /* Project details */
+    .project-description {
+        padding-top: 80px;
+    }
+
+    /* Project gallery */
+    .project-gallery {
+        padding-top: 80px;
+    }
+
+    /* Service feature */
+    .service-feature {
+        padding: 80px 0;
+        margin-top: 80px;
+    }
+
+    /* Home1 project */
+    .home1-project {
+        padding-top: 80px;
+    }
+
+    /* Title image */
+    .title-img-section {
+        padding-top: 80px;
+    }
+
+    /* Home3 hero section */
+    .home3-hero-section {
+        padding: 80px 0 220px 0;
+    }
+
+    .home3-hero-title {
+        font-size: 38px;
+        line-height: 47px;
+    }
+
+    .home3-hero-video-title {
+        font-size: 16px;
+        line-height: 36px;
+    }
+
+    .hero-video-text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .home3-hero-video {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    /* Home3 about */
+    .home3-about{
+        padding-top: 80px;
+    }
+
+    /* Home3 project */
+    .home3-project {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+
+    /* Home3 faq */
+    .home3-faq {
+        margin-top: 30px;
+        padding-bottom: 0;
+    }
+
+    /* Home3 call to action */
+    .home3-call-action {
+        padding: 80px 0;
+    }
+
+    /* Home2 about */
+    .home2-about {
+        padding-top: 80px;
+    }
+
+    /* Home2 service */
+    .home2-service {
+        padding-top: 70px;
+        padding-bottom: 70px;
+        margin-top: 80px;
+    }
+
+    /* Home1 testimonial */
+    .home1-testimonial {
+        padding-top: 80px;
+    }
+
+    .home1-testimonial-content {
+        padding: 30px;
+    }
+
 }
