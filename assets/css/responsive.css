@@ -242,7 +242,7 @@
         padding-top: 100px;
       }
 
-    .hero-title p {
+    .hero-title span {
         padding: 0px 10px;
     }
 
@@ -557,6 +557,23 @@
 
     .home1-testimonial-content {
         padding: 30px;
+    }
+
+    /* Footer */
+    .footer-info {
+        padding-bottom: 60px;
+    }
+
+    .footer-content {
+        padding-top: 60px;
+    }
+
+    .footer-newsletter {
+        padding-top: 30px;
+    }
+
+    .footer-img {
+        padding-top: 70px;
     }
 
 }

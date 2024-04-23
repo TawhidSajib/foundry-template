@@ -404,7 +404,7 @@ body {
   font-family: 'GeneralSans-Bold';
 }
 
-.hero-title p{
+.hero-title span{
   display: inline-block;
   background: var(--white);
   color: var(--black);
@@ -3341,4 +3341,5 @@ body {
 
 .privacy-link{
   border-bottom: 1px solid var(--secondary);
+  display: inline-block;
 }
