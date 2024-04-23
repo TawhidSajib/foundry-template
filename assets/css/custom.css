@@ -370,14 +370,15 @@ body {
 
      /* 
   *************************
-  *  Hero section 
+  * Home1 Hero section 
   *************************
 */
 .hero-section{
   background-image: url('../images/home/hero-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 150px 0;
+  padding-top: 150px;
+  padding-bottom: 150px;
   position: relative;
 }
 
@@ -403,7 +404,7 @@ body {
   font-family: 'GeneralSans-Bold';
 }
 
-.hero-title p{
+.hero-title span{
   display: inline-block;
   background: var(--white);
   color: var(--black);
@@ -809,7 +810,7 @@ body {
   *************************
 */
 .home1-testimonial{
-  padding: 130px 0;
+  padding-top: 130px;
 }
 
 .home1-testimonial-shape{
@@ -839,8 +840,9 @@ body {
 .home1-award{
  background: var(--black);
  padding-top: 110px;
- padding-bottom: 210px;
+ padding-bottom: 170px;
  position: relative;
+ margin-top: 130px
 }
 
 .award-bridge-img{
@@ -1147,6 +1149,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
+  padding-bottom: 0;
   margin-top: 130px;
 }
 
@@ -1252,6 +1255,7 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .home2-team-img img{
@@ -1316,6 +1320,7 @@ body {
 }
 
 .home2-testimonial-title{
+  margin-top: 0;
   font-size: 36px;
   line-height: 46px;
   font-weight: 600;
@@ -1480,7 +1485,8 @@ body {
   background-image: url('../images/home3/home3-project-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 120px 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .home3-project-img{
@@ -1580,6 +1586,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: var(--white);
+  padding: 0;
 }
 
 .home3-service-img:hover .home-service-btn{
@@ -1620,7 +1627,8 @@ body {
   background-image: url('../images/home3/home3-project-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px
 }
 
 .home3-faq-subtitle{
@@ -1714,7 +1722,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 136px;
+  min-height: 100%;
   border-right: 1px solid #85F580;
   border-left: 1px solid #85F580;
   background: #F0FEEF;
@@ -1752,6 +1760,7 @@ body {
 */
 .home3-contact{
   padding-top: 130px;
+  padding-bottom: 0;
 }
 
 .home3-contact-form{
@@ -1844,8 +1853,27 @@ body {
   *  Start Service
   *************************
 */
+/* 
+  *************************
+  * Primary hero section
+  *************************
+*/
 .service-hero-bg{
-  background-image: url('../images/service/service-hero-bg.png');
+  background-image: url('../images/service/service-hero-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.service-details-hero-bg{
+  background-image: url('../images/service/service-details-hero-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.common-hero-bg{
+  background-image: url('../images/service/common-hero-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 0;
@@ -2473,6 +2501,10 @@ body {
   *  Blog section
   *************************
 */
+.blog-section{
+  padding-top: 130px;
+}
+
 .blog-item-title{
   font-size: 14px;
   line-height: 18px;
@@ -2581,6 +2613,9 @@ body {
   *  Blog details
   *************************
 */
+.blog-details{
+  padding-top: 130px;
+}
 
 .blog-heading-btn {
   border-radius: 0.75rem; /* Adjust the value as needed */
@@ -2704,7 +2739,11 @@ body {
     height: 451px;
 }
 
-/* Team history */
+/* 
+  *************************
+  *  Team history
+  *************************
+*/
 .team-history{
   background-image: url(../images/team/dot-bg.svg);
   background-size: cover;
@@ -2723,6 +2762,15 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: var(--black-secondary);
+}
+
+/* 
+  *************************
+  *  Team membar
+  *************************
+*/
+.team-membar{
+  padding: 130px 0;
 }
 
 /* 
@@ -2804,6 +2852,365 @@ body {
   align-items: center;
 }
 
+/* 
+  *************************
+  *  404
+  *************************
+*/
+.error{
+  position: relative;
+}
+
+.error-left-style{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%
+}
+
+.error-right-style{
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%
+}
+
+.error-content{
+  background-image: url(../images/404/error-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 125px;
+  padding-bottom: 315px;
+}
+
+.error-content h2{
+ padding-top: 115px;
+ padding-bottom: 30px;
+}
+
+.error-text{
+  padding-top: 10px;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--white);
+  font-family: 'GeneralSans-Regular';
+}
+
+/* 
+  *************************
+  *  Coming soon v1
+  *************************
+*/
+.coming-soon-v1{
+  background-image: url(../images/coming-soon/coming-soon-v1-bg.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 130px;
+  padding-bottom: 458px;
+}
+
+.coming-soon-v1-header{
+  padding-top: 274px;
+}
+
+.coming-soon-v1-title{
+  font-size: 72px;
+  line-height: 72px;
+  font-family: 'GeneralSans-Semibold';
+  color: var(--white);
+}
+
+.coming-soon-v1-subtitle{
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+  padding-top: 14px;
+  padding-bottom: 50px;
+}
+
+.coming-soon-input-group{
+  max-width: 485px;
+}
+
+.coming-soon-input-group .submit-btn{
+    position: absolute;
+    right: 3px;
+    padding: 12px 32px;
+    top: 3px;
+    background: var(--primary);
+    color: var(--white);
+    border: 1px solid var(--primary)
+}
+
+.coming-soon-input{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 15px;
+  border: 1px solid var(--white);
+  width: 100%;
+}
+
+.coming-soon-input:focus-within{
+  outline: none;
+}
+
+.social-icon-v1{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    cursor: pointer;
+    padding: 20px;
+    margin-right: 14px;
+    transition: all 0.4s linear;
+    border: 1px solid var(--white);
+    border-radius: 16px;
+    color: var(--white);
+}
+
+.form-control:focus + .submit-btn{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.social-icon-v1:hover{
+  background: var(--white);
+  color: var(--primary);
+}
+
+/* 
+  *************************
+  *  Pricing page
+  *************************
+*/
+.pricing-1{
+  padding: 130px 0
+}
+
+/* 
+  *************************
+  *  Contact form
+  *************************
+*/
+.contact-form{
+  padding-top: 130px;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 53px;
+}
+.background-image {
+  background-image: url("/assets/images/contact/bg.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.custom-padding {
+  padding: 88px 0;
+}
+
+.contact-btn-bg {
+  background-color: var(--primary);
+  padding: 17px 14px;
+  color: #fff;
+}
+
+.custom-input {
+  padding: 10px 14px;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-input:focus-visible{
+  outline: none;
+}
+
+.column-gap {
+  margin-right: 88px;
+}
+
+.box {
+  height: 127px;
+}
+
+/* 
+  *************************
+  *  Contatct team
+  *************************
+*/
+.contact-team{
+  padding-top: 130px;
+}
+
+.contact-1993-img{
+  margin-bottom: -50px;
+  position: relative;
+  z-index: -1;
+}
+
+.team-bg {
+  background-image: url("/assets/images/contact/team-bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: var(--black);
+  height: 451px;
+}
+
+.team-title {
+  max-width: 624px;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 66px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+.contact-img {
+  text-align: center;
+  margin-top: -150px;
+}
+
+.team-star-position {
+  position: absolute;
+  left: 0;
+  top: 85px;
+}
+.team-star2-position {
+    position: absolute;
+    right: 0;
+    bottom: -100px;
+}
+
+/* 
+  *************************
+  *  Contatct address
+  *************************
+*/
+.contact-address{
+  padding: 130px 0;
+}
+
+.contact-map-bg {
+  background-color: var(--black);
+  color: var(--white);
+  padding-left: 70px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+.map-bar {
+  width: 54.844px;
+  height: 2px;
+  background: var(--secondary);
+}
+
+/* 
+  *************************
+  *  Coming soon v2
+  *************************
+*/
+.coming-soon-v2-logo{
+  padding-top: 130px;
+}
+
+.coming-soon-v2-content{
+  max-width: 505px;
+  margin: 0 auto;
+}
+
+.coming-soon-v2-header{
+  padding-top: 110px;
+}
+
+.coming-soon-v2-subtitle{
+  font-size: 18px;
+  line-height: 28px;
+  color: #656565;
+  font-family: 'GeneralSans-Regular';
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.coming-soon-v2-left{
+  display: flex;
+  justify-content: start;
+}
+
+.coming-soon-v2-counter{
+  border: 1px solid var(--black);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon-v2-counter-num{
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--black);
+  font-family: 'GeneralSans-Semibold';
+}
+
+.coming-soon-v2-counter-text{
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #656565;
+}
+
+.coming-soon-v2-form{
+  display: flex;
+  padding-top: 100px;
+  padding-bottom: 130px ;
+}
+
+.coming-soon-v2-input{
+  border-bottom: 1px solid #8C9196;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-radius: 0;
+  max-width: 400px;
+}
+
+.coming-soon-v2-btn{
+  background: transparent;
+  border-bottom: 1px solid #8C9196;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+}
+
+.social-icon-v2{
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  padding: 20px;
+  margin-right: 14px;
+  transition: all 0.4s linear;
+  border: 1px solid var(--black);
+  color: var(--Black);
+}
+
+.social-icon-v2:hover{
+  background: var(--black);
+  color: var(--white);
+}
 /* 
   *************************
   *  Footer
@@ -2953,4 +3360,5 @@ body {
 
 .privacy-link{
   border-bottom: 1px solid var(--secondary);
+  display: inline-block;
 }

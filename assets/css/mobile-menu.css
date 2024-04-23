@@ -43,7 +43,7 @@
 .menu-caret {
     border-bottom: 0.6rem solid transparent;
     border-top: 0.6rem solid transparent;
-    border-left: 0.6rem solid #808080;
+    border-left: 0.6rem solid #ffffff;
     display: inline-block;
     line-height: 0;
     margin: 0 -0.3rem 0 1.2rem;
@@ -59,9 +59,11 @@
     opacity: 0;
     position: absolute;
     transition: 0.2s;
-    visibility: hidden;
+    visibility: visible;
     transform: translateY(-5rem);
     white-space: nowrap;
+    list-style-type: none;
+    overflow: hidden;
 }
 .submenu > li {
     position: relative;
@@ -96,6 +98,7 @@
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
+    overflow: hidden;
 }
 .hamburger-menu, .menu-overlay {
     display: none;
@@ -144,7 +147,7 @@
         width: 1.5rem;
    }
     .main-nav-holder {
-        background: #191919;
+        background: #F60;
         bottom: 0;
         left: 0;
         overflow: hidden;
@@ -182,7 +185,7 @@
         position: relative;
    }
     .main-nav > li.close-nav > label::before, .main-nav > li.close-nav > label::after {
-        background: #808080;
+        background: #ffffff;
         content: "";
         height: 1.8rem;
         left: 90%;
@@ -216,6 +219,7 @@
    }
     .check-toggle:checked ~ .submenu {
         height: auto;
+        list-style-type: none;
    }
     .submenu {
         display: block;
