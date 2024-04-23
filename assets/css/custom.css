@@ -1853,8 +1853,27 @@ body {
   *  Start Service
   *************************
 */
+/* 
+  *************************
+  * Primary hero section
+  *************************
+*/
 .service-hero-bg{
-  background-image: url('../images/service/service-hero-bg.png');
+  background-image: url('../images/service/service-hero-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.service-details-hero-bg{
+  background-image: url('../images/service/service-details-hero-bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.common-hero-bg{
+  background-image: url('../images/service/common-hero-bg.svg');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 0;
