@@ -20,3 +20,8 @@ faqItems.forEach(item => {
         }
     });
 });
+
+$(document).ready(function () {
+   // Init AOS
+   AOS.init();
+});
