@@ -213,6 +213,10 @@ body {
   font-family: 'GeneralSans-Medium';
  }
 
+ main {
+  overflow-x: hidden;
+}
+
   /* 
   *************************
   *  Announcement
@@ -2770,7 +2774,15 @@ body {
   *************************
 */
 .team-membar{
-  padding: 130px 0;
+  padding-top: 130px;
+}
+
+.team-mt-60{
+  margin-top: 60px;
+}
+
+.team-mt-120{
+  margin-top: 120px;
 }
 
 /* 

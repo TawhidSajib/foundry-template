@@ -387,7 +387,15 @@
 
     /* Team membar */
     .team-membar{
-        padding: 80px 0;
+        padding-top: 80px;
+      }
+
+      .team-mt-60{
+        margin-top: 0;
+      }
+      
+      .team-mt-120{
+        margin-top: 0;
       }
 
       /* Team history */
