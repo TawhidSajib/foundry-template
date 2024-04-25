@@ -1780,6 +1780,7 @@ body {
   height: 580px;
   margin-right: -50px;
   position: relative;
+  z-index: 9999;
 }
 
 .form-input{
@@ -2901,9 +2902,10 @@ body {
   align-items: center;
   padding-top: 125px;
   padding-bottom: 315px;
+  height: 100vh;
 }
 
-.error-content h2{
+.error-content h1{
  padding-top: 115px;
  padding-bottom: 30px;
 }
@@ -2914,6 +2916,7 @@ body {
   line-height: 36px;
   color: var(--white);
   font-family: 'GeneralSans-Regular';
+  text-align: center;
 }
 
 /* 
@@ -3079,6 +3082,7 @@ body {
   background-position: center;
   background-color: var(--black);
   height: 451px;
+  position: relative;
 }
 
 .team-title {
@@ -3093,6 +3097,8 @@ body {
 .contact-img {
   text-align: center;
   margin-top: -150px;
+  position: relative;
+  z-index: 999999;
 }
 
 .team-star-position {
