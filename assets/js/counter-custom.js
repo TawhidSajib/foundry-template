@@ -22,5 +22,7 @@ IO.observe( el2 )
 const el3 = document.querySelector('.counterup3' )
 IO.observe( el3 )
 const el4 = document.querySelector('.counterup4' )
-IO.observe( el4 )
+if(el4){
+IO.observe( el4 )   
+}
 }
