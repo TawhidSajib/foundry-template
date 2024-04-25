@@ -14,6 +14,8 @@ const callback = entries => {
 }
 const IO = new IntersectionObserver( callback, { threshold: 1 } )
 const el = document.querySelector('.counterup' )
+
+if(el){
 IO.observe( el )
 const el2 = document.querySelector('.counterup2' )
 IO.observe( el2 )
@@ -21,3 +23,4 @@ const el3 = document.querySelector('.counterup3' )
 IO.observe( el3 )
 const el4 = document.querySelector('.counterup4' )
 IO.observe( el4 )
+}
