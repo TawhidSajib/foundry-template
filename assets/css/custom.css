@@ -2627,21 +2627,21 @@ body {
 }
 
 .blog-heading-btn {
-  border-radius: 0.75rem; /* Adjust the value as needed */
+  border-radius: 0.75rem;
   color: #6941c6;
   background-color: #f9f5ff;
   border: none;
   padding: 0 10px;
 }
 .blog-heading-btn2 {
-  border-radius: 0.75rem; /* Adjust the value as needed */
+  border-radius: 0.75rem;
   color: #ff6600;
   background-color: #fff0d3;
   border: none;
   padding: 0 10px;
 }
 .blog-heading-btn3 {
-  border-radius: 0.75rem; /* Adjust the value as needed */
+  border-radius: 0.75rem;
   color: #c11574;
   background-color: #fdf2fa;
   border: none;
