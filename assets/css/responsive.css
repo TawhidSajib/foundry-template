@@ -56,6 +56,14 @@
         display: none;
     }
 
+    .home2-hero-carousel img{
+        width: 100% !important;
+      }
+
+      .home2-hero-carousel .owl-stage-outer{
+        width: 100%;
+      }
+
     /* FAQ 3 */
     .faq-3-contact-question{
         text-align: center;
