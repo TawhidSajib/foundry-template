@@ -282,6 +282,10 @@ body {
     padding: 10px 0;
 }
 
+.dropdown-item:active{
+  color: var(--black) !important;
+} 
+
 .nav-btn{
     padding: 43px;
     border: none;
@@ -316,8 +320,12 @@ body {
     display: block;
  }
 
+ .dropdown-item{
+  padding: 8px 15px !important;
+ }
+
  .dropdown-item:hover{
-    background: var(--background);
+    background: #FFF0D3;
  }
 
  /* 

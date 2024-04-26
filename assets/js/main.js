@@ -284,24 +284,24 @@ $(document).ready(function () {
    });
 
    // Home2 hero carousel
-   var owl = $('.home2-hero-carousel');
-   var totalItems = owl.find('.owl-item:not(.cloned)').length;
-   var currentIndex = owl.find('.owl-item.active').index() - 1;
+   var owlHeroSlider = $('.home2-hero-carousel');
+   var sliderTotalItems = owlHeroSlider.find('.owl-item:not(.cloned)').length;
+   var sldierCurrentIndex = owlHeroSlider.find('.owl-item.active').index() - 1;
    var heroSlideNames = ["BlueBay Gas Plant", "Royal Oil Plant", "Top Metal Element"];
-   $('.num').html(''+currentIndex+'/'+totalItems+'');
-   $('.slide-name').html(heroSlideNames[currentIndex - 1]);
+   $('.home2-slider-num').html(''+sldierCurrentIndex+'/'+sliderTotalItems+'');
+   $('.slide-name').html(heroSlideNames[sldierCurrentIndex - 1]);
    
-   owl.owlCarousel();
+   owlHeroSlider.owlCarousel();
 
    $('.home2-prev-btn').click(function() {
-       currentIndex = owl.find('.owl-item.active').index() - 1;
-       $('.num').html(''+currentIndex+'/'+totalItems+'');
-       $('.slide-name').html(heroSlideNames[currentIndex - 1]);
+       sldierCurrentIndex = owlHeroSlider.find('.owl-item.active').index() - 1;
+       $('.home2-slider-num').html(''+sldierCurrentIndex+'/'+sliderTotalItems+'');
+       $('.slide-name').html(heroSlideNames[sldierCurrentIndex - 1]);
    });
    
    $('.home2-next-btn').click(function() { 
-       currentIndex = owl.find('.owl-item.active').index() - 1;
-       $('.num').html(''+currentIndex+'/'+totalItems+'');
-       $('.slide-name').html(heroSlideNames[currentIndex - 1]);
+       sldierCurrentIndex = owlHeroSlider.find('.owl-item.active').index() - 1;
+       $('.home2-slider-num').html(''+sldierCurrentIndex+'/'+sliderTotalItems+'');
+       $('.slide-name').html(heroSlideNames[sldierCurrentIndex - 1]);
    });
 });
