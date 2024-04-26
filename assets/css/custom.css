@@ -462,6 +462,14 @@ body {
   z-index: -1;
 }
 
+.num{
+  min-width: 30px;
+}
+
+.slide-name{
+  min-width: 200px;
+}
+
  /* 
   *************************
   *  Home1 about
@@ -654,6 +662,10 @@ body {
   height: 10px !important;
   border-radius: 0 !important;
   transition: 0.3s all linear;
+}
+
+.home1-service-carousel .owl-stage-outer{
+  padding-top: 20px;
 }
 
   /* 

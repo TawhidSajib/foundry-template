@@ -21,10 +21,7 @@ faqItems.forEach(item => {
     });
 });
 
-$(document).ready(function () {
-   // Init AOS
-   AOS.init();
-});
+
 
 
 // Coming soon countdown date
@@ -189,3 +186,108 @@ projectDetails.owlCarousel({
          },
       },
    });
+
+// Home1 hero carousel
+   const home1hero = $(".home1-hero-carousel");
+   home1hero.owlCarousel({
+      autoPlay: false,
+      loop: true,
+      slideBy: 1,
+      dots: false,
+      smartSpeed: 600,
+      responsive: {
+         0: {
+            loop: true,
+            items: 1,
+         },
+         600: {
+            loop: true,
+            items: 1,
+         },
+         1000: {
+            items: 1,
+            loop: true,
+         },
+      },
+   });
+
+   // Home1 hero carousel trigger prev slider
+   $(".home1-prev-btn").click(function () {
+    home1hero.trigger("prev.owl.carousel");
+ });
+
+ //   Home 1 trigger next slider
+ $(".home1-next-btn").click(function () {
+    home1hero.trigger("next.owl.carousel");
+ });
+
+// const home1Carousel = document.getElementById("home1_carousel");
+// console.log(home1Carousel);
+
+$(document).ready(function () {
+   // Init AOS
+   AOS.init();
+
+   //
+   // var owl = $('.home1-hero-carousel');
+   //  owl.owlCarousel({
+   //      items: 1, // Specify the number of items displayed per slide
+   //      loop: true // If you want the carousel to loop
+   //  });
+
+   //  // Update slide count initially
+   //  updateSlideCount();
+
+   //  // Listen for carousel change event
+   //  owl.on('changed.owl.carousel', function(event) {
+   //      updateSlideCount();
+   //  });
+
+   //  // Listen for next and prev button clicks
+   //  $('.owl-next, .owl-prev').click(function(){
+   //      updateSlideCount(); // Update slide count
+   //  });
+    
+   //  function updateSlideCount() {
+   //      var currentItem = (owl.find('.owl-item.active').index() % owl.find('.owl-item:not(.cloned)').length) + 1;
+   //      var totalItems = owl.find('.owl-item:not(.cloned)').length; // Exclude cloned items
+   //      $('#slideCount').text(currentItem + '/' + totalItems);
+   //  }
+
+   // var totalItems = $('.home1-hero-carousel .slide').length;
+   // // var totalItems = $('.home1-hero-carousel .slide').length;
+   // var currentIndex = $('.active').index() - 1;
+   // $('.num').html(''+currentIndex+'/'+totalItems+'');
+   // var  owl = $('.home1-hero-carousel');
+   // owl.owlCarousel();
+   // $('.home1-prev-btn').click(function() {
+   //     currentIndex = $('.owl-item.active').index() - 1;
+   //    $('.num').html(''+currentIndex+'/'+totalItems+'');
+   // })
+   
+   // $('.home1-next-btn').click(function() { 
+   //     currentIndex = $('.owl-item.active').index() - 1;
+   //    $('.num').html(''+currentIndex+'/'+totalItems+'');
+   // })
+
+   var owl = $('.home1-hero-carousel');
+   var totalItems = owl.find('.owl-item:not(.cloned)').length;
+   var currentIndex = owl.find('.owl-item.active').index() - 1;
+   var slideNames = ["BlueBay Gas Plant", "Royal Oil Plant", "Top Metal Element"];
+   $('.num').html(''+currentIndex+'/'+totalItems+'');
+   $('.slide-name').html(slideNames[currentIndex - 1]);
+   
+   owl.owlCarousel();
+
+   $('.home1-prev-btn').click(function() {
+       currentIndex = owl.find('.owl-item.active').index() - 1;
+       $('.num').html(''+currentIndex+'/'+totalItems+'');
+       $('.slide-name').html(slideNames[currentIndex - 1]);
+   });
+   
+   $('.home1-next-btn').click(function() { 
+       currentIndex = owl.find('.owl-item.active').index() - 1;
+       $('.num').html(''+currentIndex+'/'+totalItems+'');
+       $('.slide-name').html(slideNames[currentIndex - 1]);
+   });
+});
