@@ -221,55 +221,47 @@ projectDetails.owlCarousel({
     home1hero.trigger("next.owl.carousel");
  });
 
-// const home1Carousel = document.getElementById("home1_carousel");
-// console.log(home1Carousel);
+
+ // Home2 hero carousel
+ const home2hero = $(".home2-hero-carousel");
+ home2hero.owlCarousel({
+    autoPlay: false,
+    loop: true,
+    slideBy: 1,
+    dots: false,
+    smartSpeed: 600,
+    responsive: {
+       0: {
+          loop: true,
+          items: 1,
+       },
+       600: {
+          loop: true,
+          items: 1,
+       },
+       1000: {
+          items: 1,
+          loop: true,
+       },
+    },
+ });
+
+ // Home2 hero carousel trigger prev slider
+ $(".home2-prev-btn").click(function () {
+   home2hero.trigger("prev.owl.carousel");
+});
+
+//  Home 2 trigger next slider
+$(".home2-next-btn").click(function () {
+   home2hero.trigger("next.owl.carousel");
+});
+
 
 $(document).ready(function () {
    // Init AOS
    AOS.init();
 
-   //
-   // var owl = $('.home1-hero-carousel');
-   //  owl.owlCarousel({
-   //      items: 1, // Specify the number of items displayed per slide
-   //      loop: true // If you want the carousel to loop
-   //  });
-
-   //  // Update slide count initially
-   //  updateSlideCount();
-
-   //  // Listen for carousel change event
-   //  owl.on('changed.owl.carousel', function(event) {
-   //      updateSlideCount();
-   //  });
-
-   //  // Listen for next and prev button clicks
-   //  $('.owl-next, .owl-prev').click(function(){
-   //      updateSlideCount(); // Update slide count
-   //  });
-    
-   //  function updateSlideCount() {
-   //      var currentItem = (owl.find('.owl-item.active').index() % owl.find('.owl-item:not(.cloned)').length) + 1;
-   //      var totalItems = owl.find('.owl-item:not(.cloned)').length; // Exclude cloned items
-   //      $('#slideCount').text(currentItem + '/' + totalItems);
-   //  }
-
-   // var totalItems = $('.home1-hero-carousel .slide').length;
-   // // var totalItems = $('.home1-hero-carousel .slide').length;
-   // var currentIndex = $('.active').index() - 1;
-   // $('.num').html(''+currentIndex+'/'+totalItems+'');
-   // var  owl = $('.home1-hero-carousel');
-   // owl.owlCarousel();
-   // $('.home1-prev-btn').click(function() {
-   //     currentIndex = $('.owl-item.active').index() - 1;
-   //    $('.num').html(''+currentIndex+'/'+totalItems+'');
-   // })
-   
-   // $('.home1-next-btn').click(function() { 
-   //     currentIndex = $('.owl-item.active').index() - 1;
-   //    $('.num').html(''+currentIndex+'/'+totalItems+'');
-   // })
-
+   // Home1 hero carousel
    var owl = $('.home1-hero-carousel');
    var totalItems = owl.find('.owl-item:not(.cloned)').length;
    var currentIndex = owl.find('.owl-item.active').index() - 1;
@@ -289,5 +281,27 @@ $(document).ready(function () {
        currentIndex = owl.find('.owl-item.active').index() - 1;
        $('.num').html(''+currentIndex+'/'+totalItems+'');
        $('.slide-name').html(slideNames[currentIndex - 1]);
+   });
+
+   // Home2 hero carousel
+   var owl = $('.home2-hero-carousel');
+   var totalItems = owl.find('.owl-item:not(.cloned)').length;
+   var currentIndex = owl.find('.owl-item.active').index() - 1;
+   var heroSlideNames = ["BlueBay Gas Plant", "Royal Oil Plant", "Top Metal Element"];
+   $('.num').html(''+currentIndex+'/'+totalItems+'');
+   $('.slide-name').html(heroSlideNames[currentIndex - 1]);
+   
+   owl.owlCarousel();
+
+   $('.home2-prev-btn').click(function() {
+       currentIndex = owl.find('.owl-item.active').index() - 1;
+       $('.num').html(''+currentIndex+'/'+totalItems+'');
+       $('.slide-name').html(heroSlideNames[currentIndex - 1]);
+   });
+   
+   $('.home2-next-btn').click(function() { 
+       currentIndex = owl.find('.owl-item.active').index() - 1;
+       $('.num').html(''+currentIndex+'/'+totalItems+'');
+       $('.slide-name').html(heroSlideNames[currentIndex - 1]);
    });
 });

@@ -1178,6 +1178,23 @@ body {
     line-height: 30px;
     color: var(--white);
 }
+
+.home2-hero-carousel{
+  background: white;
+  padding: 10px 0 0 10px;
+}
+
+.home2-hero-carousel img{
+  width: auto !important;
+}
+
+.home2-hero-carousel.owl-carousel{
+  width: auto !important;
+}
+
+.home2-hero-carousel .owl-stage-outer{
+  width: 210px;
+}
 /* 
   *************************
   *  Home2 about
