@@ -287,7 +287,7 @@ body {
 } 
 
 .nav-btn{
-    padding: 43px;
+    padding: 46px;
     border: none;
     color: #FFF;
 }
@@ -379,25 +379,80 @@ body {
     -webkit-animation-name: slideIn;
     animation-name: slideIn;
   }
-    /* 
+
+  /* 
   *************************
-  *  Start Home 1
+  *  Video popup
+  *************************
+*/
+/* This adds padding from top and bottom */
+.custom-popup-class .mfp-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+/* This adds max-width to popup content */
+.custom-popup-class .mfp-content {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* This makes "#popup-video" scale down proportionally */
+#popup-video {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  /* This is scale ratio */
+  padding-top: 56.25%;
+}
+/* This shifts close button outside of the container */
+#popup-video .mfp-close {
+  top: -44px;
+  color: #FFF;
+  text-align: right;
+  right: 1px;
+}
+/* This is an element itself */
+.some-element {
+  background: #EBE8E8;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+}
+
+.video-popup-element iframe{
+  width: 100%;
+  height: 100%;
+}
+
+/* 
+  *************************
+  *  Start Home 1 page
   *************************
 */
 
 
-     /* 
+/* 
   *************************
   * Home1 Hero section 
   *************************
 */
 .hero-section{
-  background-image: url('../images/home/hero-bg.png');
+  background-image: url('../images/home/hero-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 150px;
   padding-bottom: 150px;
   position: relative;
+}
+
+/* Serve PNG to browsers that don't support WebP */
+@media (min-width: 0) {
+  .hero-section {
+    background-image: url('../images/home/hero-bg.png');
+  }
 }
 
 .hero-header{
@@ -799,11 +854,18 @@ body {
   *************************
 */
 .home1-team{
-  background-image: url('../images/home/home1-team-bg.png');
+  background-image: url('../images/home/home1-team-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 130px 0;
   margin-top: 130px;
+}
+
+/* Serve PNG to browsers that don't support WebP */
+@media (max-width: 0) {
+  .home1-team {
+    background-image: url('../images/home/home1-team-bg.png');
+  }
 }
 
 .home1-team-header{
@@ -832,7 +894,6 @@ body {
 
 .home1-team-thumbnail{
   position: relative;
-  /* height: 100%; */
 }
 
 .home1-team-thumbnail img{
@@ -966,7 +1027,7 @@ body {
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%; /* 52.8px */
+  line-height: 53px;
 }
 .blog-title-color {
   color: #f60;
@@ -1045,7 +1106,7 @@ body {
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 125%; /* 45px */
+  line-height: 45px;
 }
 .newsletter-para {
   color: var(--White-Border-Lite, #efefef);
@@ -1054,11 +1115,10 @@ body {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 30px */
+  line-height: 30px;
 }
 
-
-   /* 
+/* 
   *************************
   *  Call to action
   *************************
@@ -1074,10 +1134,17 @@ body {
 
 .call-action-bg{
   background: var(--black);
-  background-image: url('../images/home/call-action-bg.png');
+  background-image: url('../images/home/call-action-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 110px 0;
+}
+
+/* Serve PNG to browsers that don't support WebP */
+@media (max-width: 0) {
+  .call-action-bg {
+    background-image: url('../images/home/call-action-bg.png');
+  }
 }
 
 .call-action-header{
@@ -1102,13 +1169,13 @@ body {
 
 /* 
   *************************
-  *  End Home 1
+  *  End Home 1 page
   *************************
 */
 
 /* 
   *************************
-  *  Start Home 2
+  *  Start Home 2 page
   *************************
 */
 
