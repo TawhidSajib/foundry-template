@@ -287,7 +287,7 @@ body {
 } 
 
 .nav-btn{
-    padding: 43px;
+    padding: 46px;
     border: none;
     color: #FFF;
 }
@@ -440,12 +440,19 @@ body {
   *************************
 */
 .hero-section{
-  background-image: url('../images/home/hero-bg.png');
+  background-image: url('../images/home/hero-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 150px;
   padding-bottom: 150px;
   position: relative;
+}
+
+/* Serve PNG to browsers that don't support WebP */
+@media (min-width: 0) {
+  .hero-section {
+    background-image: url('../images/home/hero-bg.png');
+  }
 }
 
 .hero-header{
@@ -847,11 +854,18 @@ body {
   *************************
 */
 .home1-team{
-  background-image: url('../images/home/home1-team-bg.png');
+  background-image: url('../images/home/home1-team-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 130px 0;
   margin-top: 130px;
+}
+
+/* Serve PNG to browsers that don't support WebP */
+@media (max-width: 0) {
+  .home1-team {
+    background-image: url('../images/home/home1-team-bg.png');
+  }
 }
 
 .home1-team-header{
@@ -1120,10 +1134,17 @@ body {
 
 .call-action-bg{
   background: var(--black);
-  background-image: url('../images/home/call-action-bg.png');
+  background-image: url('../images/home/call-action-bg.webp');
   background-size: cover;
   background-repeat: no-repeat;
   padding: 110px 0;
+}
+
+/* Serve PNG to browsers that don't support WebP */
+@media (max-width: 0) {
+  .call-action-bg {
+    background-image: url('../images/home/call-action-bg.png');
+  }
 }
 
 .call-action-header{
